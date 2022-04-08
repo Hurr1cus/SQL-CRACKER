@@ -172,6 +172,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="entity\userData.cs" />
+    <Compile Include="util\compare.cs" />
+    <Compile Include="util\sqlFormat.cs" />
     <EmbeddedResource Include="controller\testChoice.resx">
       <DependentUpon>testChoice.cs</DependentUpon>
     </EmbeddedResource>

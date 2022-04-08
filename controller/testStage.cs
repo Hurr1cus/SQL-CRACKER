@@ -40,7 +40,7 @@ namespace SQLCRACKER {
             string tableName = "";
             if (listBox_table.SelectedItem == null) return;
             tableName = listBox_table.SelectedItem.ToString();
-            DataSet myds = queryBySql("SELECT * FROM " + tableName);
+            DataSet myds = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, "SELECT * FROM " + tableName, null); 
             dataGridView1.DataSource = myds.Tables[0];
             //显示指定表的字段名
             string tnSql = "Pragma Table_Info(" + tableName + ")";
@@ -57,25 +57,12 @@ namespace SQLCRACKER {
             dataGridView1.CurrentCell = dataGridView1.Rows[0].Cells[1];
             dataGridView1.CurrentRow.Selected = true; // 使定位到的行处于选中状态
             sqlConn.testDataSqliteConn.Close();
-        }
-        //查询数据
-        private DataSet queryBySql(String sql) {
-            DataSet myds = new DataSet();
-            try {
-                myds = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sql, null);
-            }
-            catch (Exception ex) {
-                MessageBox.Show(ex.Message);
-            }
-            return myds;
-        }
-
+        }       
         private void button_submit_Click(object sender, EventArgs e) {
             try {
-                DataTable dtUser = queryBySql(text_sql.Text).Tables[0];
-                dataGridView1.DataSource = dtUser;
-                DataTable dtCorrect = queryBySql(correctSql).Tables[0];
-                bool isCorrect = CompareDataTable(dtUser, dtCorrect);
+                string sqlUser = text_sql.Text;
+                dataGridView1.DataSource = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlUser, null).Tables[0];
+                bool isCorrect = compare.compareSql(sqlUser, correctSql);
                 String correctString = "恭喜，您的SQL语句正确:D";
                 String wrongString = "您的SQL语句错误，请仔细检查:(";
                 MessageBox.Show(isCorrect ? correctString : wrongString);
@@ -93,50 +80,7 @@ namespace SQLCRACKER {
             catch (Exception ex) {
                 MessageBox.Show(ex.StackTrace);
             }
-        }
-
-        public static bool CompareDataTable(DataTable dtA, DataTable dtB) {
-            if (dtA.Rows.Count == dtB.Rows.Count) {
-                if (CompareColumn(dtA.Columns, dtB.Columns)) {
-                    //比内容 
-                    for (int i = 0; i < dtA.Rows.Count; i++) {
-                        for (int j = 0; j < dtA.Columns.Count; j++) {
-                            if (!dtA.Rows[i][j].Equals(dtB.Rows[i][j])) {
-                                return false;
-                            }
-                        }
-                    }
-                    return true;
-                }
-                else {
-                    return false;
-                }
-            }
-            else {
-                return false;
-            }
-        }
-        private static bool CompareColumn(System.Data.DataColumnCollection dcA, System.Data.DataColumnCollection dcB) {
-
-            if (dcA.Count == dcB.Count) {
-                foreach (DataColumn dc in dcA) {
-                    //找相同字段名称 
-                    if (dcB.IndexOf(dc.ColumnName) > -1) {
-                        //测试数据类型 
-                        if (dc.DataType != dcB[dcB.IndexOf(dc.ColumnName)].DataType) {
-                            return false;
-                        }
-                    }
-                    else {
-                        return false;
-                    }
-                }
-                return true;
-            }
-            else {
-                return false;
-            }
-        }
+        }       
         private void Stage_FormClosing(object sender, FormClosingEventArgs e) {
             stageSelection.stg = null;
             saveData();
