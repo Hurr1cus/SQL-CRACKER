@@ -20,25 +20,25 @@ namespace SQLCRACKER {
         
 
         public stageSelection() {
-            InitializeComponent();
-            for (int i=userData.stage+1;i<=50;i++) {
+            InitializeComponent();            
+            for (int i=userData.Stage+1;i<=50;i++) {
                 Button button = (Button)this.Controls.Find("buttonQuestion" + i, true)[0];
                 button.Enabled = false;
                 button.Text = "--";               
             }            
             string sql = "select stage_description,question_description,grammer_tip,correct_sql,tip from stageTest";
             testDataTable = SQLiteHelper.ExecuteDataSet(sqlConn.testInforDataSqliteConn, sql, null).Tables[0];
-
+            
         }
         
                
         private void StageSelection_Load(object sender, EventArgs e) {
-            label_username.Text = userData.userName + "，欢迎回来!";                     
-            label_belong.Text = "您目前的进度：" + userData.stage + "/50，所持金币数：" +  userData.coin;
+            label_username.Text = userData.UserName + "，欢迎回来!";
+            refresh();
         }
 
         public void refresh() {
-            label_belong.Text = "您目前的进度：" + userData.stage + "/50，所持金币数：" + userData.coin;
+            label_belong.Text = "您目前的进度：" + userData.Stage + "/50，所持金币数：" + userData.Coin;
         }
         private void StageSelection_FormClosing(object sender, FormClosingEventArgs e) {
             stg = null;
@@ -78,10 +78,7 @@ namespace SQLCRACKER {
         }
 
         private void StageSelection_FormClosed(object sender, FormClosedEventArgs e) {
-            this.Hide();
-            //DialogResult d = this.ShowDialog();
-            //if (d == DialogResult.Cancel)
-            //    this.Visible = true;
+            
         }
     }
 }

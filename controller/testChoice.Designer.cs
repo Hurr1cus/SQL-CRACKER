@@ -26,6 +26,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelCurrentQuestion = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabeTotalQuestion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelQuestion = new System.Windows.Forms.Label();
             this.labelA = new System.Windows.Forms.Label();
@@ -36,7 +37,6 @@
             this.buttonChoice1 = new System.Windows.Forms.Button();
             this.buttonChoice2 = new System.Windows.Forms.Button();
             this.buttonChoice3 = new System.Windows.Forms.Button();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,12 @@
             this.toolStripStatusLabeTotalQuestion.Name = "toolStripStatusLabeTotalQuestion";
             this.toolStripStatusLabeTotalQuestion.Size = new System.Drawing.Size(58, 21);
             this.toolStripStatusLabeTotalQuestion.Text = "总共10题";
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 20);
+            this.toolStripProgressBar1.Value = 50;
             // 
             // panel1
             // 
@@ -135,6 +141,7 @@
             // buttonChoice0
             // 
             this.buttonChoice0.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonChoice0.FlatAppearance.BorderSize = 0;
             this.buttonChoice0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChoice0.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonChoice0.ForeColor = System.Drawing.Color.Chocolate;
@@ -144,11 +151,12 @@
             this.buttonChoice0.TabIndex = 6;
             this.buttonChoice0.Text = "A选项";
             this.buttonChoice0.UseVisualStyleBackColor = false;
-            this.buttonChoice0.Click += new System.EventHandler(this.click);
+            this.buttonChoice0.Click += new System.EventHandler(this.optionClick);
             // 
             // buttonChoice1
             // 
             this.buttonChoice1.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonChoice1.FlatAppearance.BorderSize = 0;
             this.buttonChoice1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChoice1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonChoice1.ForeColor = System.Drawing.Color.Chocolate;
@@ -158,11 +166,12 @@
             this.buttonChoice1.TabIndex = 7;
             this.buttonChoice1.Text = "B选项";
             this.buttonChoice1.UseVisualStyleBackColor = false;
-            this.buttonChoice1.Click += new System.EventHandler(this.click);
+            this.buttonChoice1.Click += new System.EventHandler(this.optionClick);
             // 
             // buttonChoice2
             // 
             this.buttonChoice2.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonChoice2.FlatAppearance.BorderSize = 0;
             this.buttonChoice2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChoice2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonChoice2.ForeColor = System.Drawing.Color.Chocolate;
@@ -172,11 +181,12 @@
             this.buttonChoice2.TabIndex = 8;
             this.buttonChoice2.Text = "C选项";
             this.buttonChoice2.UseVisualStyleBackColor = false;
-            this.buttonChoice2.Click += new System.EventHandler(this.click);
+            this.buttonChoice2.Click += new System.EventHandler(this.optionClick);
             // 
             // buttonChoice3
             // 
             this.buttonChoice3.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonChoice3.FlatAppearance.BorderSize = 0;
             this.buttonChoice3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChoice3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonChoice3.ForeColor = System.Drawing.Color.Chocolate;
@@ -186,13 +196,7 @@
             this.buttonChoice3.TabIndex = 9;
             this.buttonChoice3.Text = "D选项";
             this.buttonChoice3.UseVisualStyleBackColor = false;
-            this.buttonChoice3.Click += new System.EventHandler(this.click);
-            // 
-            // toolStripProgressBar1
-            // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 20);
-            this.toolStripProgressBar1.Value = 50;
+            this.buttonChoice3.Click += new System.EventHandler(this.optionClick);
             // 
             // testChoice
             // 
@@ -212,7 +216,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "testChoice";
             this.Text = " 做题";
             this.statusStrip1.ResumeLayout(false);

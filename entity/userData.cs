@@ -8,13 +8,25 @@ namespace SQLCRACKER
 {
     public static class userData
     {
-        public static string userName;
-        public static int stage;
-        public static int coin;
-        public static int currentSelectionStage;
+        public static string UserName
+        {
+            get;set;
+        }
+        public static int Stage
+        {
+            get;set;
+        }
+        public static int Coin
+        {
+            get; set;
+        }
+        public static int CurrentSelectionStage
+        {
+            get; set;
+        }
         public static void saveData()
         {
-            string updateSql = "UPDATE `user` SET stage=" + userData.stage + ",coin=" + userData.coin + ",current_selection_stage="+currentSelectionStage+" WHERE user_name='" + userData.userName + "';";
+            string updateSql = "UPDATE `user` SET stage=" + userData.Stage + ",coin=" + userData.Coin + ",current_selection_stage="+CurrentSelectionStage+" WHERE user_name='" + userData.UserName + "';";
             SQLiteHelper.ExecuteDataSet(sqlConn.userDataSqliteConn, updateSql, null);
         }
 

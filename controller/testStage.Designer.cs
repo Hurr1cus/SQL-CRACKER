@@ -113,8 +113,7 @@ namespace SQLCRACKER
             // 
             this.label_stage.AutoSize = true;
             this.label_stage.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_stage.Location = new System.Drawing.Point(31, 25);
-            this.label_stage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_stage.Location = new System.Drawing.Point(23, 20);
             this.label_stage.Name = "label_stage";
             this.label_stage.Size = new System.Drawing.Size(88, 26);
             this.label_stage.TabIndex = 0;
@@ -123,10 +122,9 @@ namespace SQLCRACKER
             // label_question
             // 
             this.label_question.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_question.Location = new System.Drawing.Point(33, 66);
-            this.label_question.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_question.Location = new System.Drawing.Point(25, 53);
             this.label_question.Name = "label_question";
-            this.label_question.Size = new System.Drawing.Size(1152, 50);
+            this.label_question.Size = new System.Drawing.Size(864, 40);
             this.label_question.TabIndex = 1;
             this.label_question.Text = "关卡问题会显示在这里";
             this.label_question.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,13 +132,11 @@ namespace SQLCRACKER
             // text_sql
             // 
             this.text_sql.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_sql.Location = new System.Drawing.Point(37, 164);
-            this.text_sql.Margin = new System.Windows.Forms.Padding(4);
+            this.text_sql.Location = new System.Drawing.Point(28, 131);
             this.text_sql.Multiline = true;
             this.text_sql.Name = "text_sql";
-            this.text_sql.Size = new System.Drawing.Size(1157, 112);
+            this.text_sql.Size = new System.Drawing.Size(869, 90);
             this.text_sql.TabIndex = 2;
-            this.text_sql.TextChanged += new System.EventHandler(this.text_sql_TextChanged);
             // 
             // button_submit
             // 
@@ -148,14 +144,13 @@ namespace SQLCRACKER
             this.button_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_submit.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_submit.ForeColor = System.Drawing.Color.Tomato;
-            this.button_submit.Location = new System.Drawing.Point(1204, 164);
-            this.button_submit.Margin = new System.Windows.Forms.Padding(4);
+            this.button_submit.Location = new System.Drawing.Point(903, 131);
             this.button_submit.Name = "button_submit";
-            this.button_submit.Size = new System.Drawing.Size(149, 112);
+            this.button_submit.Size = new System.Drawing.Size(112, 90);
             this.button_submit.TabIndex = 3;
             this.button_submit.Text = "提交";
             this.button_submit.UseVisualStyleBackColor = false;
-            this.button_submit.Click += new System.EventHandler(this.button_submit_Click);
+            this.button_submit.Click += new System.EventHandler(this.buttonSubmitClick);
             // 
             // button_clear
             // 
@@ -163,14 +158,13 @@ namespace SQLCRACKER
             this.button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clear.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_clear.ForeColor = System.Drawing.Color.Tomato;
-            this.button_clear.Location = new System.Drawing.Point(1361, 220);
-            this.button_clear.Margin = new System.Windows.Forms.Padding(4);
+            this.button_clear.Location = new System.Drawing.Point(1021, 176);
             this.button_clear.Name = "button_clear";
-            this.button_clear.Size = new System.Drawing.Size(81, 56);
+            this.button_clear.Size = new System.Drawing.Size(61, 45);
             this.button_clear.TabIndex = 4;
             this.button_clear.Text = "清空";
             this.button_clear.UseVisualStyleBackColor = false;
-            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
+            this.button_clear.Click += new System.EventHandler(this.buttonClearClick);
             // 
             // dataGridView1
             // 
@@ -180,13 +174,12 @@ namespace SQLCRACKER
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 31);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 25);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(835, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(626, 341);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.TabStop = false;
             // 
@@ -194,11 +187,9 @@ namespace SQLCRACKER
             // 
             this.groupBox_result.Controls.Add(this.dataGridView1);
             this.groupBox_result.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox_result.Location = new System.Drawing.Point(37, 298);
-            this.groupBox_result.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox_result.Location = new System.Drawing.Point(28, 238);
             this.groupBox_result.Name = "groupBox_result";
-            this.groupBox_result.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_result.Size = new System.Drawing.Size(851, 478);
+            this.groupBox_result.Size = new System.Drawing.Size(638, 382);
             this.groupBox_result.TabIndex = 7;
             this.groupBox_result.TabStop = false;
             this.groupBox_result.Text = "查询结果";
@@ -211,11 +202,9 @@ namespace SQLCRACKER
             this.groupBox_enter.Controls.Add(this.groupBox_row);
             this.groupBox_enter.Controls.Add(this.groupBox_table);
             this.groupBox_enter.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox_enter.Location = new System.Drawing.Point(908, 298);
-            this.groupBox_enter.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox_enter.Location = new System.Drawing.Point(681, 238);
             this.groupBox_enter.Name = "groupBox_enter";
-            this.groupBox_enter.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_enter.Size = new System.Drawing.Size(531, 478);
+            this.groupBox_enter.Size = new System.Drawing.Size(398, 382);
             this.groupBox_enter.TabIndex = 8;
             this.groupBox_enter.TabStop = false;
             this.groupBox_enter.Text = "快速输入";
@@ -224,9 +213,8 @@ namespace SQLCRACKER
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(237, 51);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.MaximumSize = new System.Drawing.Size(72, 0);
+            this.label1.Location = new System.Drawing.Point(178, 41);
+            this.label1.MaximumSize = new System.Drawing.Size(54, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 68);
             this.label1.TabIndex = 3;
@@ -282,11 +270,9 @@ namespace SQLCRACKER
             this.groupBox_keyboard.Controls.Add(this.button2);
             this.groupBox_keyboard.Controls.Add(this.button1);
             this.groupBox_keyboard.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox_keyboard.Location = new System.Drawing.Point(24, 235);
-            this.groupBox_keyboard.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox_keyboard.Location = new System.Drawing.Point(18, 188);
             this.groupBox_keyboard.Name = "groupBox_keyboard";
-            this.groupBox_keyboard.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_keyboard.Size = new System.Drawing.Size(495, 222);
+            this.groupBox_keyboard.Size = new System.Drawing.Size(371, 178);
             this.groupBox_keyboard.TabIndex = 1;
             this.groupBox_keyboard.TabStop = false;
             this.groupBox_keyboard.Text = "关键字 (点击输入)";
@@ -297,10 +283,9 @@ namespace SQLCRACKER
             this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button46.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button46.ForeColor = System.Drawing.Color.Tomato;
-            this.button46.Location = new System.Drawing.Point(460, 75);
-            this.button46.Margin = new System.Windows.Forms.Padding(4);
+            this.button46.Location = new System.Drawing.Point(345, 60);
             this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(21, 29);
+            this.button46.Size = new System.Drawing.Size(16, 23);
             this.button46.TabIndex = 50;
             this.button46.TabStop = false;
             this.button46.Text = ".";
@@ -313,15 +298,14 @@ namespace SQLCRACKER
             this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button45.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button45.ForeColor = System.Drawing.Color.Tomato;
-            this.button45.Location = new System.Drawing.Point(284, 2);
-            this.button45.Margin = new System.Windows.Forms.Padding(4);
+            this.button45.Location = new System.Drawing.Point(213, 2);
             this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(95, 29);
+            this.button45.Size = new System.Drawing.Size(71, 23);
             this.button45.TabIndex = 49;
             this.button45.TabStop = false;
             this.button45.Text = "空格";
             this.button45.UseVisualStyleBackColor = false;
-            this.button45.Click += new System.EventHandler(this.button45_Click);
+            this.button45.Click += new System.EventHandler(this.buttonBlankClick);
             // 
             // button44
             // 
@@ -329,15 +313,14 @@ namespace SQLCRACKER
             this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button44.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button44.ForeColor = System.Drawing.Color.Tomato;
-            this.button44.Location = new System.Drawing.Point(387, 2);
-            this.button44.Margin = new System.Windows.Forms.Padding(4);
+            this.button44.Location = new System.Drawing.Point(290, 2);
             this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(95, 29);
+            this.button44.Size = new System.Drawing.Size(71, 23);
             this.button44.TabIndex = 48;
             this.button44.TabStop = false;
             this.button44.Text = "<×]退格";
             this.button44.UseVisualStyleBackColor = false;
-            this.button44.Click += new System.EventHandler(this.button44_Click);
+            this.button44.Click += new System.EventHandler(this.buttonBankSpaceClick);
             // 
             // button43
             // 
@@ -345,10 +328,9 @@ namespace SQLCRACKER
             this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button43.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button43.ForeColor = System.Drawing.Color.Tomato;
-            this.button43.Location = new System.Drawing.Point(415, 184);
-            this.button43.Margin = new System.Windows.Forms.Padding(4);
+            this.button43.Location = new System.Drawing.Point(311, 147);
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(67, 29);
+            this.button43.Size = new System.Drawing.Size(50, 23);
             this.button43.TabIndex = 47;
             this.button43.TabStop = false;
             this.button43.Text = "COUNT";
@@ -361,10 +343,9 @@ namespace SQLCRACKER
             this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button42.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button42.ForeColor = System.Drawing.Color.Tomato;
-            this.button42.Location = new System.Drawing.Point(364, 184);
-            this.button42.Margin = new System.Windows.Forms.Padding(4);
+            this.button42.Location = new System.Drawing.Point(273, 147);
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(43, 29);
+            this.button42.Size = new System.Drawing.Size(32, 23);
             this.button42.TabIndex = 46;
             this.button42.TabStop = false;
             this.button42.Text = "AVG";
@@ -377,10 +358,9 @@ namespace SQLCRACKER
             this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button41.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button41.ForeColor = System.Drawing.Color.Tomato;
-            this.button41.Location = new System.Drawing.Point(439, 148);
-            this.button41.Margin = new System.Windows.Forms.Padding(4);
+            this.button41.Location = new System.Drawing.Point(329, 118);
             this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(43, 29);
+            this.button41.Size = new System.Drawing.Size(32, 23);
             this.button41.TabIndex = 45;
             this.button41.TabStop = false;
             this.button41.Text = "SUM";
@@ -393,10 +373,9 @@ namespace SQLCRACKER
             this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button40.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button40.ForeColor = System.Drawing.Color.Tomato;
-            this.button40.Location = new System.Drawing.Point(405, 111);
-            this.button40.Margin = new System.Windows.Forms.Padding(4);
+            this.button40.Location = new System.Drawing.Point(304, 89);
             this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(76, 29);
+            this.button40.Size = new System.Drawing.Size(57, 23);
             this.button40.TabIndex = 44;
             this.button40.TabStop = false;
             this.button40.Text = "TRUNC";
@@ -409,10 +388,9 @@ namespace SQLCRACKER
             this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button39.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button39.ForeColor = System.Drawing.Color.Tomato;
-            this.button39.Location = new System.Drawing.Point(313, 184);
-            this.button39.Margin = new System.Windows.Forms.Padding(4);
+            this.button39.Location = new System.Drawing.Point(235, 147);
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(43, 29);
+            this.button39.Size = new System.Drawing.Size(32, 23);
             this.button39.TabIndex = 43;
             this.button39.TabStop = false;
             this.button39.Text = "END";
@@ -425,10 +403,9 @@ namespace SQLCRACKER
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button13.ForeColor = System.Drawing.Color.Tomato;
-            this.button13.Location = new System.Drawing.Point(251, 184);
-            this.button13.Margin = new System.Windows.Forms.Padding(4);
+            this.button13.Location = new System.Drawing.Point(188, 147);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(55, 29);
+            this.button13.Size = new System.Drawing.Size(41, 23);
             this.button13.TabIndex = 42;
             this.button13.TabStop = false;
             this.button13.Text = "ELSE";
@@ -441,10 +418,9 @@ namespace SQLCRACKER
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button12.ForeColor = System.Drawing.Color.Tomato;
-            this.button12.Location = new System.Drawing.Point(188, 184);
-            this.button12.Margin = new System.Windows.Forms.Padding(4);
+            this.button12.Location = new System.Drawing.Point(141, 147);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(55, 29);
+            this.button12.Size = new System.Drawing.Size(41, 23);
             this.button12.TabIndex = 41;
             this.button12.TabStop = false;
             this.button12.Text = "THEN";
@@ -457,10 +433,9 @@ namespace SQLCRACKER
             this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button38.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button38.ForeColor = System.Drawing.Color.Tomato;
-            this.button38.Location = new System.Drawing.Point(91, 184);
-            this.button38.Margin = new System.Windows.Forms.Padding(4);
+            this.button38.Location = new System.Drawing.Point(68, 147);
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(89, 29);
+            this.button38.Size = new System.Drawing.Size(67, 23);
             this.button38.TabIndex = 40;
             this.button38.TabStop = false;
             this.button38.Text = "CASE WHEN";
@@ -473,10 +448,9 @@ namespace SQLCRACKER
             this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button37.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button37.ForeColor = System.Drawing.Color.Tomato;
-            this.button37.Location = new System.Drawing.Point(15, 184);
-            this.button37.Margin = new System.Windows.Forms.Padding(4);
+            this.button37.Location = new System.Drawing.Point(11, 147);
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(68, 29);
+            this.button37.Size = new System.Drawing.Size(51, 23);
             this.button37.TabIndex = 39;
             this.button37.TabStop = false;
             this.button37.Text = "DECODE";
@@ -489,10 +463,9 @@ namespace SQLCRACKER
             this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button36.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button36.ForeColor = System.Drawing.Color.Tomato;
-            this.button36.Location = new System.Drawing.Point(372, 148);
-            this.button36.Margin = new System.Windows.Forms.Padding(4);
+            this.button36.Location = new System.Drawing.Point(279, 118);
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(61, 29);
+            this.button36.Size = new System.Drawing.Size(46, 23);
             this.button36.TabIndex = 38;
             this.button36.TabStop = false;
             this.button36.Text = "ROUND";
@@ -505,10 +478,9 @@ namespace SQLCRACKER
             this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button35.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button35.ForeColor = System.Drawing.Color.Tomato;
-            this.button35.Location = new System.Drawing.Point(299, 148);
-            this.button35.Margin = new System.Windows.Forms.Padding(4);
+            this.button35.Location = new System.Drawing.Point(224, 118);
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(68, 29);
+            this.button35.Size = new System.Drawing.Size(51, 23);
             this.button35.TabIndex = 37;
             this.button35.TabStop = false;
             this.button35.Text = "LENGTH";
@@ -521,10 +493,9 @@ namespace SQLCRACKER
             this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button34.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button34.ForeColor = System.Drawing.Color.Tomato;
-            this.button34.Location = new System.Drawing.Point(229, 148);
-            this.button34.Margin = new System.Windows.Forms.Padding(4);
+            this.button34.Location = new System.Drawing.Point(172, 118);
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(61, 29);
+            this.button34.Size = new System.Drawing.Size(46, 23);
             this.button34.TabIndex = 36;
             this.button34.TabStop = false;
             this.button34.Text = "LOWER";
@@ -537,10 +508,9 @@ namespace SQLCRACKER
             this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button33.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button33.ForeColor = System.Drawing.Color.Tomato;
-            this.button33.Location = new System.Drawing.Point(160, 148);
-            this.button33.Margin = new System.Windows.Forms.Padding(4);
+            this.button33.Location = new System.Drawing.Point(120, 118);
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(61, 29);
+            this.button33.Size = new System.Drawing.Size(46, 23);
             this.button33.TabIndex = 35;
             this.button33.TabStop = false;
             this.button33.Text = "UPPER";
@@ -553,10 +523,9 @@ namespace SQLCRACKER
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button32.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button32.ForeColor = System.Drawing.Color.Tomato;
-            this.button32.Location = new System.Drawing.Point(97, 148);
-            this.button32.Margin = new System.Windows.Forms.Padding(4);
+            this.button32.Location = new System.Drawing.Point(73, 118);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(55, 29);
+            this.button32.Size = new System.Drawing.Size(41, 23);
             this.button32.TabIndex = 34;
             this.button32.TabStop = false;
             this.button32.Text = "LIKE";
@@ -569,10 +538,9 @@ namespace SQLCRACKER
             this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button31.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button31.ForeColor = System.Drawing.Color.Tomato;
-            this.button31.Location = new System.Drawing.Point(405, 39);
-            this.button31.Margin = new System.Windows.Forms.Padding(4);
+            this.button31.Location = new System.Drawing.Point(304, 31);
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(76, 29);
+            this.button31.Size = new System.Drawing.Size(57, 23);
             this.button31.TabIndex = 33;
             this.button31.TabStop = false;
             this.button31.Text = "HAVING";
@@ -585,10 +553,9 @@ namespace SQLCRACKER
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button30.ForeColor = System.Drawing.Color.Tomato;
-            this.button30.Location = new System.Drawing.Point(345, 111);
-            this.button30.Margin = new System.Windows.Forms.Padding(4);
+            this.button30.Location = new System.Drawing.Point(259, 89);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(55, 29);
+            this.button30.Size = new System.Drawing.Size(41, 23);
             this.button30.TabIndex = 32;
             this.button30.TabStop = false;
             this.button30.Text = "NULL";
@@ -601,10 +568,9 @@ namespace SQLCRACKER
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button29.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button29.ForeColor = System.Drawing.Color.Tomato;
-            this.button29.Location = new System.Drawing.Point(305, 75);
-            this.button29.Margin = new System.Windows.Forms.Padding(4);
+            this.button29.Location = new System.Drawing.Point(229, 60);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(25, 29);
+            this.button29.Size = new System.Drawing.Size(19, 23);
             this.button29.TabIndex = 31;
             this.button29.TabStop = false;
             this.button29.Text = "_";
@@ -617,10 +583,9 @@ namespace SQLCRACKER
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button28.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button28.ForeColor = System.Drawing.Color.Tomato;
-            this.button28.Location = new System.Drawing.Point(337, 75);
-            this.button28.Margin = new System.Windows.Forms.Padding(4);
+            this.button28.Location = new System.Drawing.Point(253, 60);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(29, 29);
+            this.button28.Size = new System.Drawing.Size(22, 23);
             this.button28.TabIndex = 30;
             this.button28.TabStop = false;
             this.button28.Text = "%";
@@ -633,10 +598,9 @@ namespace SQLCRACKER
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button27.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button27.ForeColor = System.Drawing.Color.Tomato;
-            this.button27.Location = new System.Drawing.Point(303, 111);
-            this.button27.Margin = new System.Windows.Forms.Padding(4);
+            this.button27.Location = new System.Drawing.Point(227, 89);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(36, 29);
+            this.button27.Size = new System.Drawing.Size(27, 23);
             this.button27.TabIndex = 29;
             this.button27.TabStop = false;
             this.button27.Text = "IN";
@@ -649,10 +613,9 @@ namespace SQLCRACKER
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button26.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button26.ForeColor = System.Drawing.Color.Tomato;
-            this.button26.Location = new System.Drawing.Point(13, 148);
-            this.button26.Margin = new System.Windows.Forms.Padding(4);
+            this.button26.Location = new System.Drawing.Point(10, 118);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(36, 29);
+            this.button26.Size = new System.Drawing.Size(27, 23);
             this.button26.TabIndex = 28;
             this.button26.TabStop = false;
             this.button26.Text = "IS";
@@ -665,10 +628,9 @@ namespace SQLCRACKER
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button25.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button25.ForeColor = System.Drawing.Color.Tomato;
-            this.button25.Location = new System.Drawing.Point(217, 111);
-            this.button25.Margin = new System.Windows.Forms.Padding(4);
+            this.button25.Location = new System.Drawing.Point(163, 89);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(77, 29);
+            this.button25.Size = new System.Drawing.Size(58, 23);
             this.button25.TabIndex = 27;
             this.button25.TabStop = false;
             this.button25.Text = "BETWEEN";
@@ -681,10 +643,9 @@ namespace SQLCRACKER
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button24.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button24.ForeColor = System.Drawing.Color.Tomato;
-            this.button24.Location = new System.Drawing.Point(185, 111);
-            this.button24.Margin = new System.Windows.Forms.Padding(4);
+            this.button24.Location = new System.Drawing.Point(139, 89);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(24, 29);
+            this.button24.Size = new System.Drawing.Size(18, 23);
             this.button24.TabIndex = 26;
             this.button24.TabStop = false;
             this.button24.Text = ")";
@@ -697,10 +658,9 @@ namespace SQLCRACKER
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button23.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button23.ForeColor = System.Drawing.Color.Tomato;
-            this.button23.Location = new System.Drawing.Point(153, 111);
-            this.button23.Margin = new System.Windows.Forms.Padding(4);
+            this.button23.Location = new System.Drawing.Point(115, 89);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(24, 29);
+            this.button23.Size = new System.Drawing.Size(18, 23);
             this.button23.TabIndex = 25;
             this.button23.TabStop = false;
             this.button23.Text = "(";
@@ -713,10 +673,9 @@ namespace SQLCRACKER
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button22.ForeColor = System.Drawing.Color.Tomato;
-            this.button22.Location = new System.Drawing.Point(121, 111);
-            this.button22.Margin = new System.Windows.Forms.Padding(4);
+            this.button22.Location = new System.Drawing.Point(91, 89);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(24, 29);
+            this.button22.Size = new System.Drawing.Size(18, 23);
             this.button22.TabIndex = 24;
             this.button22.TabStop = false;
             this.button22.Text = "/";
@@ -729,10 +688,9 @@ namespace SQLCRACKER
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button21.ForeColor = System.Drawing.Color.Tomato;
-            this.button21.Location = new System.Drawing.Point(432, 75);
-            this.button21.Margin = new System.Windows.Forms.Padding(4);
+            this.button21.Location = new System.Drawing.Point(324, 60);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(21, 29);
+            this.button21.Size = new System.Drawing.Size(16, 23);
             this.button21.TabIndex = 23;
             this.button21.TabStop = false;
             this.button21.Text = "*";
@@ -745,10 +703,9 @@ namespace SQLCRACKER
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button20.ForeColor = System.Drawing.Color.Tomato;
-            this.button20.Location = new System.Drawing.Point(89, 111);
-            this.button20.Margin = new System.Windows.Forms.Padding(4);
+            this.button20.Location = new System.Drawing.Point(67, 89);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(24, 29);
+            this.button20.Size = new System.Drawing.Size(18, 23);
             this.button20.TabIndex = 22;
             this.button20.TabStop = false;
             this.button20.Text = "-";
@@ -761,10 +718,9 @@ namespace SQLCRACKER
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button19.ForeColor = System.Drawing.Color.Tomato;
-            this.button19.Location = new System.Drawing.Point(57, 111);
-            this.button19.Margin = new System.Windows.Forms.Padding(4);
+            this.button19.Location = new System.Drawing.Point(43, 89);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(24, 29);
+            this.button19.Size = new System.Drawing.Size(18, 23);
             this.button19.TabIndex = 21;
             this.button19.TabStop = false;
             this.button19.Text = "+";
@@ -777,10 +733,9 @@ namespace SQLCRACKER
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button18.ForeColor = System.Drawing.Color.Tomato;
-            this.button18.Location = new System.Drawing.Point(13, 111);
-            this.button18.Margin = new System.Windows.Forms.Padding(4);
+            this.button18.Location = new System.Drawing.Point(10, 89);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(36, 29);
+            this.button18.Size = new System.Drawing.Size(27, 23);
             this.button18.TabIndex = 20;
             this.button18.TabStop = false;
             this.button18.Text = "||";
@@ -793,10 +748,9 @@ namespace SQLCRACKER
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button17.ForeColor = System.Drawing.Color.Tomato;
-            this.button17.Location = new System.Drawing.Point(404, 75);
-            this.button17.Margin = new System.Windows.Forms.Padding(4);
+            this.button17.Location = new System.Drawing.Point(303, 60);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(21, 29);
+            this.button17.Size = new System.Drawing.Size(16, 23);
             this.button17.TabIndex = 19;
             this.button17.TabStop = false;
             this.button17.Text = ",";
@@ -809,10 +763,9 @@ namespace SQLCRACKER
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button16.ForeColor = System.Drawing.Color.Tomato;
-            this.button16.Location = new System.Drawing.Point(373, 75);
-            this.button16.Margin = new System.Windows.Forms.Padding(4);
+            this.button16.Location = new System.Drawing.Point(280, 60);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(24, 29);
+            this.button16.Size = new System.Drawing.Size(18, 23);
             this.button16.TabIndex = 18;
             this.button16.TabStop = false;
             this.button16.Text = "\'";
@@ -825,10 +778,9 @@ namespace SQLCRACKER
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button15.ForeColor = System.Drawing.Color.Tomato;
-            this.button15.Location = new System.Drawing.Point(53, 148);
-            this.button15.Margin = new System.Windows.Forms.Padding(4);
+            this.button15.Location = new System.Drawing.Point(40, 118);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(36, 29);
+            this.button15.Size = new System.Drawing.Size(27, 23);
             this.button15.TabIndex = 17;
             this.button15.TabStop = false;
             this.button15.Text = "AS";
@@ -841,10 +793,9 @@ namespace SQLCRACKER
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button14.ForeColor = System.Drawing.Color.Tomato;
-            this.button14.Location = new System.Drawing.Point(261, 75);
-            this.button14.Margin = new System.Windows.Forms.Padding(4);
+            this.button14.Location = new System.Drawing.Point(196, 60);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(36, 29);
+            this.button14.Size = new System.Drawing.Size(27, 23);
             this.button14.TabIndex = 16;
             this.button14.TabStop = false;
             this.button14.Text = "<>";
@@ -857,10 +808,9 @@ namespace SQLCRACKER
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button11.ForeColor = System.Drawing.Color.Tomato;
-            this.button11.Location = new System.Drawing.Point(225, 75);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
+            this.button11.Location = new System.Drawing.Point(169, 60);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(29, 29);
+            this.button11.Size = new System.Drawing.Size(22, 23);
             this.button11.TabIndex = 13;
             this.button11.TabStop = false;
             this.button11.Text = "=";
@@ -873,10 +823,9 @@ namespace SQLCRACKER
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button10.ForeColor = System.Drawing.Color.Tomato;
-            this.button10.Location = new System.Drawing.Point(191, 75);
-            this.button10.Margin = new System.Windows.Forms.Padding(4);
+            this.button10.Location = new System.Drawing.Point(143, 60);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(29, 29);
+            this.button10.Size = new System.Drawing.Size(22, 23);
             this.button10.TabIndex = 12;
             this.button10.TabStop = false;
             this.button10.Text = "<";
@@ -889,10 +838,9 @@ namespace SQLCRACKER
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button9.ForeColor = System.Drawing.Color.Tomato;
-            this.button9.Location = new System.Drawing.Point(155, 75);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Location = new System.Drawing.Point(116, 60);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(29, 29);
+            this.button9.Size = new System.Drawing.Size(22, 23);
             this.button9.TabIndex = 11;
             this.button9.TabStop = false;
             this.button9.Text = ">";
@@ -905,10 +853,9 @@ namespace SQLCRACKER
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button8.ForeColor = System.Drawing.Color.Tomato;
-            this.button8.Location = new System.Drawing.Point(105, 75);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Location = new System.Drawing.Point(79, 60);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(43, 29);
+            this.button8.Size = new System.Drawing.Size(32, 23);
             this.button8.TabIndex = 10;
             this.button8.TabStop = false;
             this.button8.Text = "NOT";
@@ -921,10 +868,9 @@ namespace SQLCRACKER
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button7.ForeColor = System.Drawing.Color.Tomato;
-            this.button7.Location = new System.Drawing.Point(63, 75);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Location = new System.Drawing.Point(47, 60);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(36, 29);
+            this.button7.Size = new System.Drawing.Size(27, 23);
             this.button7.TabIndex = 9;
             this.button7.TabStop = false;
             this.button7.Text = "OR";
@@ -937,10 +883,9 @@ namespace SQLCRACKER
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button6.ForeColor = System.Drawing.Color.Tomato;
-            this.button6.Location = new System.Drawing.Point(13, 75);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Location = new System.Drawing.Point(10, 60);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(44, 29);
+            this.button6.Size = new System.Drawing.Size(33, 23);
             this.button6.TabIndex = 8;
             this.button6.TabStop = false;
             this.button6.Text = "AND";
@@ -953,10 +898,9 @@ namespace SQLCRACKER
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button5.ForeColor = System.Drawing.Color.Tomato;
-            this.button5.Location = new System.Drawing.Point(313, 39);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(235, 31);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 29);
+            this.button5.Size = new System.Drawing.Size(63, 23);
             this.button5.TabIndex = 7;
             this.button5.TabStop = false;
             this.button5.Text = "GROUP BY";
@@ -969,10 +913,9 @@ namespace SQLCRACKER
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button4.ForeColor = System.Drawing.Color.Tomato;
-            this.button4.Location = new System.Drawing.Point(221, 39);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(166, 31);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 29);
+            this.button4.Size = new System.Drawing.Size(63, 23);
             this.button4.TabIndex = 6;
             this.button4.TabStop = false;
             this.button4.Text = "ORDER BY";
@@ -985,10 +928,9 @@ namespace SQLCRACKER
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.ForeColor = System.Drawing.Color.Tomato;
-            this.button3.Location = new System.Drawing.Point(152, 39);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(114, 31);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(61, 29);
+            this.button3.Size = new System.Drawing.Size(46, 23);
             this.button3.TabIndex = 5;
             this.button3.TabStop = false;
             this.button3.Text = "WHERE";
@@ -1001,10 +943,9 @@ namespace SQLCRACKER
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.Tomato;
-            this.button2.Location = new System.Drawing.Point(89, 39);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(67, 31);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 29);
+            this.button2.Size = new System.Drawing.Size(41, 23);
             this.button2.TabIndex = 4;
             this.button2.TabStop = false;
             this.button2.Text = "FROM";
@@ -1017,11 +958,10 @@ namespace SQLCRACKER
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.Color.Tomato;
-            this.button1.Location = new System.Drawing.Point(13, 39);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(10, 31);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(68, 29);
+            this.button1.Size = new System.Drawing.Size(51, 23);
             this.button1.TabIndex = 3;
             this.button1.TabStop = false;
             this.button1.Text = "SELECT";
@@ -1034,25 +974,22 @@ namespace SQLCRACKER
             this.button_find.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_find.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_find.ForeColor = System.Drawing.Color.Tomato;
-            this.button_find.Location = new System.Drawing.Point(229, 156);
-            this.button_find.Margin = new System.Windows.Forms.Padding(4);
+            this.button_find.Location = new System.Drawing.Point(172, 125);
             this.button_find.Name = "button_find";
-            this.button_find.Size = new System.Drawing.Size(72, 71);
+            this.button_find.Size = new System.Drawing.Size(54, 57);
             this.button_find.TabIndex = 2;
             this.button_find.TabStop = false;
             this.button_find.Text = "查询→";
             this.button_find.UseVisualStyleBackColor = false;
-            this.button_find.Click += new System.EventHandler(this.button_find_Click);
+            this.button_find.Click += new System.EventHandler(this.buttonFindClick);
             // 
             // groupBox_row
             // 
             this.groupBox_row.Controls.Add(this.listBox_row);
             this.groupBox_row.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox_row.Location = new System.Drawing.Point(309, 35);
-            this.groupBox_row.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox_row.Location = new System.Drawing.Point(232, 28);
             this.groupBox_row.Name = "groupBox_row";
-            this.groupBox_row.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_row.Size = new System.Drawing.Size(209, 192);
+            this.groupBox_row.Size = new System.Drawing.Size(157, 154);
             this.groupBox_row.TabIndex = 1;
             this.groupBox_row.TabStop = false;
             this.groupBox_row.Text = "字段";
@@ -1061,23 +998,20 @@ namespace SQLCRACKER
             // 
             this.listBox_row.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.listBox_row.FormattingEnabled = true;
-            this.listBox_row.Location = new System.Drawing.Point(8, 30);
-            this.listBox_row.Margin = new System.Windows.Forms.Padding(4);
+            this.listBox_row.Location = new System.Drawing.Point(6, 24);
             this.listBox_row.Name = "listBox_row";
-            this.listBox_row.Size = new System.Drawing.Size(192, 134);
+            this.listBox_row.Size = new System.Drawing.Size(145, 108);
             this.listBox_row.TabIndex = 0;
             this.listBox_row.TabStop = false;
-            this.listBox_row.DoubleClick += new System.EventHandler(this.listBox_row_DoubleClick);
+            this.listBox_row.DoubleClick += new System.EventHandler(this.listBoxRowDoubleClick);
             // 
             // groupBox_table
             // 
             this.groupBox_table.Controls.Add(this.listBox_table);
             this.groupBox_table.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox_table.Location = new System.Drawing.Point(24, 35);
-            this.groupBox_table.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox_table.Location = new System.Drawing.Point(18, 28);
             this.groupBox_table.Name = "groupBox_table";
-            this.groupBox_table.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_table.Size = new System.Drawing.Size(197, 192);
+            this.groupBox_table.Size = new System.Drawing.Size(148, 154);
             this.groupBox_table.TabIndex = 0;
             this.groupBox_table.TabStop = false;
             this.groupBox_table.Text = "数据表";
@@ -1086,13 +1020,12 @@ namespace SQLCRACKER
             // 
             this.listBox_table.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.listBox_table.FormattingEnabled = true;
-            this.listBox_table.Location = new System.Drawing.Point(8, 30);
-            this.listBox_table.Margin = new System.Windows.Forms.Padding(4);
+            this.listBox_table.Location = new System.Drawing.Point(6, 24);
             this.listBox_table.Name = "listBox_table";
-            this.listBox_table.Size = new System.Drawing.Size(180, 134);
+            this.listBox_table.Size = new System.Drawing.Size(136, 108);
             this.listBox_table.TabIndex = 0;
             this.listBox_table.TabStop = false;
-            this.listBox_table.DoubleClick += new System.EventHandler(this.listBox_table_DoubleClick);
+            this.listBox_table.DoubleClick += new System.EventHandler(this.listBoxTableDoubleClick);
             // 
             // button_hint
             // 
@@ -1100,14 +1033,13 @@ namespace SQLCRACKER
             this.button_hint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_hint.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_hint.ForeColor = System.Drawing.Color.Tomato;
-            this.button_hint.Location = new System.Drawing.Point(1361, 164);
-            this.button_hint.Margin = new System.Windows.Forms.Padding(4);
+            this.button_hint.Location = new System.Drawing.Point(1021, 131);
             this.button_hint.Name = "button_hint";
-            this.button_hint.Size = new System.Drawing.Size(81, 48);
+            this.button_hint.Size = new System.Drawing.Size(61, 38);
             this.button_hint.TabIndex = 9;
             this.button_hint.Text = "提示";
             this.button_hint.UseVisualStyleBackColor = false;
-            this.button_hint.Click += new System.EventHandler(this.button_hint_Click);
+            this.button_hint.Click += new System.EventHandler(this.buttonTipClick);
             // 
             // panel1
             // 
@@ -1116,10 +1048,9 @@ namespace SQLCRACKER
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label_res);
             this.panel1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.panel1.Location = new System.Drawing.Point(1205, 25);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(904, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(237, 102);
+            this.panel1.Size = new System.Drawing.Size(178, 82);
             this.panel1.TabIndex = 10;
             this.panel1.Visible = false;
             // 
@@ -1127,8 +1058,7 @@ namespace SQLCRACKER
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(25, 56);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(19, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 17);
             this.label2.TabIndex = 1;
@@ -1138,8 +1068,7 @@ namespace SQLCRACKER
             // 
             this.label_res.AutoSize = true;
             this.label_res.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_res.Location = new System.Drawing.Point(23, 27);
-            this.label_res.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_res.Location = new System.Drawing.Point(17, 22);
             this.label_res.Name = "label_res";
             this.label_res.Size = new System.Drawing.Size(80, 22);
             this.label_res.TabIndex = 0;
@@ -1149,8 +1078,7 @@ namespace SQLCRACKER
             // 
             this.label_hint.AutoSize = true;
             this.label_hint.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_hint.Location = new System.Drawing.Point(35, 128);
-            this.label_hint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_hint.Location = new System.Drawing.Point(26, 102);
             this.label_hint.Name = "label_hint";
             this.label_hint.Size = new System.Drawing.Size(125, 12);
             this.label_hint.TabIndex = 11;
@@ -1159,19 +1087,19 @@ namespace SQLCRACKER
             // toolStripProgressBar1
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(56, 21);
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(56, 17);
             this.toolStripProgressBar1.Text = "当前关卡";
             // 
             // toolStripProgressBar2
             // 
             this.toolStripProgressBar2.Name = "toolStripProgressBar2";
-            this.toolStripProgressBar2.Size = new System.Drawing.Size(133, 20);
+            this.toolStripProgressBar2.Size = new System.Drawing.Size(100, 16);
             this.toolStripProgressBar2.Value = 100;
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(45, 21);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(45, 17);
             this.toolStripStatusLabel1.Text = "???/50";
             // 
             // statusStrip1
@@ -1181,10 +1109,9 @@ namespace SQLCRACKER
             this.toolStripProgressBar1,
             this.toolStripProgressBar2,
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 795);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 635);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1467, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1100, 22);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
@@ -1192,10 +1119,10 @@ namespace SQLCRACKER
             // testStage
             // 
             this.AcceptButton = this.button_submit;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1467, 821);
+            this.ClientSize = new System.Drawing.Size(1100, 657);
             this.Controls.Add(this.label_hint);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_hint);
@@ -1208,7 +1135,6 @@ namespace SQLCRACKER
             this.Controls.Add(this.label_question);
             this.Controls.Add(this.label_stage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "testStage";
             this.Text = "问题";

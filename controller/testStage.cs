@@ -22,19 +22,8 @@ namespace SQLCRACKER {
             listBox_table.Items.Add("dept");
         }
 
-        public void linkDataBase() {          
-            string sqlfieldName = "select name from sqlite_master where type='table' order by name";           
-            SQLiteCommand cmd = new SQLiteCommand(sqlfieldName, sqlConn.testDataSqliteConn);
-            sqlConn.testDataSqliteConn.Open();
-            using (SQLiteDataReader dr = cmd.ExecuteReader()) {
-                while (dr.Read()) {
-                    // 字段名
-                    listBox_table.Items.Add(dr["Name"]);
-                }
-            }
-            sqlConn.testDataSqliteConn.Close();
-        }
-        private void button_find_Click(object sender, EventArgs e) {
+       
+        private void buttonFindClick(object sender, EventArgs e) {
             listBox_row.Items.Clear();
             string tableName = "";
             if (listBox_table.SelectedItem == null) return;
@@ -51,33 +40,27 @@ namespace SQLCRACKER {
                     listBox_row.Items.Add(dr["Name"]);
                 }
             }
-            dataGridView1.ClearSelection();
-            dataGridView1.Rows[0].Selected = true; // 定位到指定的行
-            dataGridView1.CurrentCell = dataGridView1.Rows[0].Cells[1];
-            dataGridView1.CurrentRow.Selected = true; // 使定位到的行处于选中状态
+            dataGridView1.ClearSelection();           
             sqlConn.testDataSqliteConn.Close();
         }       
-        private void button_submit_Click(object sender, EventArgs e) {
+        private void buttonSubmitClick(object sender, EventArgs e) {
             try {
                 string sqlUser = text_sql.Text;
                 dataGridView1.DataSource = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlUser, null).Tables[0];
                 if (correctSql == "Sandbox") return;
-                bool isCorrect = compare.compareSql(sqlUser, correctSql);            
-                if (isCorrect)
-                {
-                    panel1.Visible = true;
-                }
-                else
-                {
+                bool isCorrect = compare.compareSql(sqlUser, correctSql);
+                if (!isCorrect) { 
                     MessageBox.Show("您的SQL语句错误，请仔细检查:(", "语句错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                if (isCorrect && stageSelection.currentStage >= userData.stage) {
+                    return;
+                }           
+                panel1.Visible = true;
+                if (stageSelection.currentStage >= userData.Stage) {
                     label2.Text = "获得通关奖励：金钱 * 10";
-                    userData.coin += 10;
-                    userData.stage++;
-                    Button button = (Button)(stageSelection.Controls.Find("buttonQuestion" + userData.stage, true)[0]);
+                    userData.Coin += 10;
+                    userData.Stage++;
+                    Button button = (Button)(stageSelection.Controls.Find("buttonQuestion" + userData.Stage, true)[0]);
                     button.Enabled = true;
-                    button.Text = userData.stage.ToString();
+                    button.Text = userData.Stage.ToString();
                 }
 
             }
@@ -93,7 +76,7 @@ namespace SQLCRACKER {
         
 
         // 下面是快捷输入
-        private void listBox_table_DoubleClick(object sender, EventArgs e) {
+        private void listBoxTableDoubleClick(object sender, EventArgs e) {
             if (text_sql.Text == "") {
                 text_sql.Text += listBox_table.SelectedItem.ToString();
                 return;
@@ -102,32 +85,30 @@ namespace SQLCRACKER {
            
         }
         
-        private void listBox_row_DoubleClick(object sender, EventArgs e) {
+        private void listBoxRowDoubleClick(object sender, EventArgs e) {
             if (text_sql.Text == "") {
                 text_sql.Text += listBox_row.SelectedItem.ToString();
                 return;
             }
             text_sql.Text += text_sql.Text.Substring(text_sql.Text.Length - 1) == " " ? listBox_row.SelectedItem.ToString() : " " + listBox_row.SelectedItem.ToString();
-        }
+        }      
 
-        private void text_sql_TextChanged(object sender, EventArgs e) {
-            if (text_sql.Text.Length > 1 && text_sql.Text.Substring(0, 1) == " ") text_sql.Text = text_sql.Text.Trim();
-        }
-
-        private void button45_Click(object sender, EventArgs e) {
+        private void buttonBlankClick(object sender, EventArgs e)
+        {
             // 添加空格
             text_sql.Text += " ";
         }
 
-        private void button44_Click(object sender, EventArgs e) {
+        private void buttonBankSpaceClick(object sender, EventArgs e)
+        {
             // 退格 1 字符
             text_sql.Text = text_sql.Text.Substring(0, text_sql.Text.Length - 1);
         }
-
-        private void button_clear_Click(object sender, EventArgs e) {
+        private void buttonClearClick(object sender, EventArgs e) {
             // 清空输入框
             text_sql.Text = "";
         }
+
 
         private void buttonClick(object sender, EventArgs e) {
             text_sql.Text += ((Button)sender).Text;
@@ -142,20 +123,35 @@ namespace SQLCRACKER {
             
         }
 
-        private void button_hint_Click(object sender, EventArgs e)
+        private void buttonTipClick(object sender, EventArgs e)
         {
-            if (stageSelection.currentStage == userData.stage)
+            if (stageSelection.currentStage == userData.Stage)
             {
                 DialogResult result = MessageBox.Show("查看提示需要消耗20金币并清空已输入内容，确认要查看吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result != DialogResult.Yes) return;
-                if (userData.coin < 20)
+                if (userData.Coin < 20)
                 {
                     MessageBox.Show("金币不够辣！", "金币不足", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                userData.coin -= 20;
+                userData.Coin -= 20;
             }
             text_sql.Text = tip;
+        }
+        private void linkDataBase()
+        {
+            string sqlfieldName = "select name from sqlite_master where type='table' order by name";
+            SQLiteCommand cmd = new SQLiteCommand(sqlfieldName, sqlConn.testDataSqliteConn);
+            sqlConn.testDataSqliteConn.Open();
+            using (SQLiteDataReader dr = cmd.ExecuteReader())
+            {
+                while (dr.Read())
+                {
+                    // 字段名
+                    listBox_table.Items.Add(dr["Name"]);
+                }
+            }
+            sqlConn.testDataSqliteConn.Close();
         }
     }
 }

@@ -15,9 +15,9 @@ namespace SQLCRACKER {
         }
 
         private void Ranking_Load(object sender, EventArgs e) {
-            labelName.Text = "你好，" + userData.userName + "！";
-            labelStage.Text = userData.stage.ToString();
-            labelCoin .Text= userData.coin.ToString();
+            labelName.Text = "你好，" + userData.UserName + "！";
+            labelStage.Text = userData.Stage.ToString();
+            labelCoin .Text= userData.Coin.ToString();
             string sql = "SELECT row_number() over(order by stage desc) 排名,user_name 用户名,stage 关卡数,coin 金钱 FROM user";
             DataSet myds = SQLiteHelper.ExecuteDataSet(sqlConn.userDataSqliteConn, sql, null);
             dataGridView1.DataSource = myds.Tables[0];

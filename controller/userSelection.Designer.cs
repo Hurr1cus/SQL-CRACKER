@@ -51,7 +51,7 @@
             this.button_Add.TabIndex = 1;
             this.button_Add.Text = "新建存档";
             this.button_Add.UseVisualStyleBackColor = false;
-            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
+            this.button_Add.Click += new System.EventHandler(this.buttonAddClick);
             // 
             // button_Delete
             // 
@@ -65,7 +65,7 @@
             this.button_Delete.TabIndex = 2;
             this.button_Delete.Text = "删除存档";
             this.button_Delete.UseVisualStyleBackColor = false;
-            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
+            this.button_Delete.Click += new System.EventHandler(this.buttonDeleteClick);
             // 
             // button_Start
             // 
@@ -79,7 +79,7 @@
             this.button_Start.TabIndex = 3;
             this.button_Start.Text = "使用本存档游玩";
             this.button_Start.UseVisualStyleBackColor = false;
-            this.button_Start.Click += new System.EventHandler(this.button_Start_Click);
+            this.button_Start.Click += new System.EventHandler(this.buttonStartClick);
             // 
             // label1
             // 

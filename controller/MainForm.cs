@@ -31,7 +31,7 @@ namespace SQLCRACKER
             DialogResult result = data.ShowDialog();
             if (result == DialogResult.Cancel)
                 this.Visible = true;
-            comboBox1.Text = userData.userName;
+            comboBox1.Text = userData.UserName;
         }
 
         private void button1_Click(object sender, EventArgs e)
