@@ -218,7 +218,9 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "testChoice";
+            this.ShowIcon = false;
             this.Text = " 做题";
+            this.Load += new System.EventHandler(this.testChoice_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
