@@ -21,17 +21,20 @@ namespace SQLCRACKER
         }
         public static bool CompareDataTable(DataTable dtA, DataTable dtB,bool isExact)
         {
-            if (dtA.Rows.Count != dtB.Rows.Count)   return false;
-            if (isExact&&!CompareColumn(dtA.Columns, dtB.Columns)) return false;            
-            //比内容 
-            for (int i = 0; i < dtA.Rows.Count; i++)
-            {
-                for (int j = 0; j < dtA.Columns.Count; j++)
+            if (dtA.Rows.Count != dtB.Rows.Count) return false;
+            if (dtA.Columns.Count != dtB.Columns.Count) return false;
+            if (isExact && !CompareColumn(dtA.Columns, dtB.Columns)) return false;
+                //比内容 
+                for (int i = 0; i < dtA.Rows.Count; i++)
                 {
-                    if (!dtA.Rows[i][j].Equals(dtB.Rows[i][j])) return false;
-                    
+                    for (int j = 0; j < dtA.Columns.Count; j++)
+                    {
+                        if (!dtA.Rows[i][j].Equals(dtB.Rows[i][j])) return false;
+
+                    }
                 }
-            }
+            
+            
             return true;
         }
         private static bool CompareColumn(System.Data.DataColumnCollection dcA, System.Data.DataColumnCollection dcB)

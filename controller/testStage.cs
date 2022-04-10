@@ -48,7 +48,7 @@ namespace SQLCRACKER {
             try {
                 string sqlUser = text_sql.Text;
                 dataGridView1.DataSource = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlUser, null).Tables[0];
-                if (correctSql == "Sandbox") return;
+                if (correctSql == "sandbox") return;
                 bool isCorrect = compare.compareSql(sqlUser, correctSql,isExact);
                 if (!isCorrect) { 
                     MessageBox.Show("您的SQL语句错误，请仔细检查:(", "语句错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
