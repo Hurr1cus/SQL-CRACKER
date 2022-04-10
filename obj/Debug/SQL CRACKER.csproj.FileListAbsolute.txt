@@ -1,0 +1,53 @@
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\DataBase\Data.db
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\DataBase\userData.db
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\SQLCRACKER.exe.config
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\SQLCRACKER.exe.manifest
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\SQLCRACKER.application
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\SQLCRACKER.exe
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\SQLCRACKER.pdb
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQL CRACKER.csproj.AssemblyReference.cache
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQL CRACKER.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.testChoice.resources
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.userSelection.resources
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.mainForm.resources
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.Properties.Resources.resources
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.rank.resources
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.testStage.resources
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.stageSelection.resources
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQL CRACKER.csproj.GenerateResource.cache
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQL CRACKER.csproj.CoreCompileInputs.cache
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.TrustInfo.xml
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.exe.manifest
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.application
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQL CRACKER.csproj.CopyComplete
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.exe
+C:\Users\Hurricus\source\repos\SQLCRACKER\obj\Debug\SQLCRACKER.pdb
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Hurricus\source\repos\SQLCRACKER\bin\Debug\System.Data.SQLite.dll
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\DataBase\Data.db
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\DataBase\userData.db
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\SQLCRACKER.exe.config
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\SQLCRACKER.exe.manifest
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\SQLCRACKER.application
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\SQLCRACKER.exe
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\SQLCRACKER.pdb
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\System.Data.SQLite.dll
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.testChoice.resources
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.userSelection.resources
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.mainForm.resources
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.Properties.Resources.resources
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.rank.resources
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.testStage.resources
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.stageSelection.resources
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQL CRACKER.csproj.GenerateResource.cache
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQL CRACKER.csproj.CoreCompileInputs.cache
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.TrustInfo.xml
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.exe.manifest
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.application
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQL CRACKER.csproj.CopyComplete
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.exe
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQLCRACKER.pdb
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQL CRACKER.csproj.AssemblyReference.cache
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\obj\Debug\SQL CRACKER.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hurricus\Documents\GitHub\SQL-CRACKER\bin\Debug\DataBase\testInfor.db

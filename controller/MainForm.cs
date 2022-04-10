@@ -20,7 +20,7 @@ namespace SQLCRACKER
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelChooseFileClick(object sender, EventArgs e)
         {
             MessageBox.Show("哎呀，别点人家嘛:P", "求放过", MessageBoxButtons.OK);
         }
@@ -34,7 +34,7 @@ namespace SQLCRACKER
             comboBox1.Text = userData.UserName;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonStartStageClick(object sender, EventArgs e)
         {
             if (comboBox1.Text != "") {
                 stageSelection data = new stageSelection();                
@@ -47,7 +47,7 @@ namespace SQLCRACKER
             }
         }
 
-        private void button3_Click(object sender, EventArgs e) {
+        private void buttonStartChoiceClick(object sender, EventArgs e) {
             if (comboBox1.Text == "") {
                 MessageBox.Show("请先选择一个存档!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

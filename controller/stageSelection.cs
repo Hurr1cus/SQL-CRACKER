@@ -77,10 +77,6 @@ namespace SQLCRACKER {
             createStage(51);
         }
 
-        private void StageSelection_FormClosed(object sender, FormClosedEventArgs e) {
-            
-        }
-
        
     }
 }

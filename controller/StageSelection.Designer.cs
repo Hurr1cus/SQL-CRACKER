@@ -2615,7 +2615,6 @@
             this.ShowIcon = false;
             this.Text = "选择关卡";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StageSelection_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StageSelection_FormClosed);
             this.Load += new System.EventHandler(this.StageSelection_Load);
             this.panel0.ResumeLayout(false);
             this.panel0.PerformLayout();

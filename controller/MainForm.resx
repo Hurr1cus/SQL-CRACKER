@@ -118,129 +118,129 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="buttonStartStage.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="buttonStartStage.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 14pt, style=Bold</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonStartStage.Location" type="System.Drawing.Point, System.Drawing">
     <value>616, 361</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonStartStage.Size" type="System.Drawing.Size, System.Drawing">
     <value>408, 44</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonStartStage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="buttonStartStage.Text" xml:space="preserve">
     <value>开始冒险</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;buttonStartStage.Name" xml:space="preserve">
+    <value>buttonStartStage</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonStartStage.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonStartStage.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonStartStage.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelChooseFile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="labelChooseFile.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 12pt</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelChooseFile.Location" type="System.Drawing.Point, System.Drawing">
     <value>767, 252</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelChooseFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 21</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelChooseFile.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="labelChooseFile.Text" xml:space="preserve">
     <value>选择你的存档</value>
   </data>
-  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="labelChooseFile.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;labelChooseFile.Name" xml:space="preserve">
+    <value>labelChooseFile</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelChooseFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelChooseFile.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelChooseFile.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="buttonStartChoice.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="buttonStartChoice.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 14pt, style=Bold</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonStartChoice.Location" type="System.Drawing.Point, System.Drawing">
     <value>616, 430</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonStartChoice.Size" type="System.Drawing.Size, System.Drawing">
     <value>408, 44</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonStartChoice.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="buttonStartChoice.Text" xml:space="preserve">
     <value>开始训练</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;buttonStartChoice.Name" xml:space="preserve">
+    <value>buttonStartChoice</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonStartChoice.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonStartChoice.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonStartChoice.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="buttonShowRank.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="buttonShowRank.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 14pt, style=Bold</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonShowRank.Location" type="System.Drawing.Point, System.Drawing">
     <value>616, 498</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonShowRank.Size" type="System.Drawing.Size, System.Drawing">
     <value>408, 44</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonShowRank.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="buttonShowRank.Text" xml:space="preserve">
     <value>查看排名</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;buttonShowRank.Name" xml:space="preserve">
+    <value>buttonShowRank</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonShowRank.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonShowRank.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonShowRank.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -9601,19 +9601,19 @@
     <value>微软雅黑, 8pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>961, 76</value>
+    <value>982, 81</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 16</value>
+    <value>85, 16</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>V 0.9.9 preRelease</value>
+    <value>V 1.0.0 release</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -9637,17 +9637,16 @@
     <value>NoControl</value>
   </data>
   <data name="buttonContact.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 48</value>
+    <value>58, 76</value>
   </data>
   <data name="buttonContact.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 44</value>
+    <value>83, 27</value>
   </data>
   <data name="buttonContact.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="buttonContact.Text" xml:space="preserve">
-    <value>联系
-我们</value>
+    <value>联系我们</value>
   </data>
   <data name="&gt;&gt;buttonContact.Name" xml:space="preserve">
     <value>buttonContact</value>
