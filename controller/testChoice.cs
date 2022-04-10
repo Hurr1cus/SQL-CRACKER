@@ -66,10 +66,5 @@ namespace SQLCRACKER
             }
 
         }
-
-        private void testChoice_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
