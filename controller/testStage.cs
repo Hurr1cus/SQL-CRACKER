@@ -11,6 +11,7 @@ namespace SQLCRACKER {
         public string correctSql = "";
         public stageSelection stageSelection = null;
         public string tip = "";
+        public bool isExact;
         public testStage() {
             InitializeComponent();
         }
@@ -48,7 +49,7 @@ namespace SQLCRACKER {
                 string sqlUser = text_sql.Text;
                 dataGridView1.DataSource = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlUser, null).Tables[0];
                 if (correctSql == "Sandbox") return;
-                bool isCorrect = compare.compareSql(sqlUser, correctSql);
+                bool isCorrect = compare.compareSql(sqlUser, correctSql,isExact);
                 if (!isCorrect) { 
                     MessageBox.Show("您的SQL语句错误，请仔细检查:(", "语句错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

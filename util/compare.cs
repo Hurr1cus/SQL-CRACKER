@@ -10,19 +10,19 @@ namespace SQLCRACKER
 {
     static class compare
     {
-        public static bool compareSql(string sql1, string sql2)
+        public static bool compareSql(string sql1, string sql2, bool isExact)
         {
             string sqlFormatted1 = sqlFormat.getSqlFormatted(sql1);
             string sqlFormatted2 = sqlFormat.getSqlFormatted(sql2);
             DataTable dt1 = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlFormatted1, null).Tables[0];
             DataTable dt2 = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlFormatted2, null).Tables[0];           
-            return CompareDataTable(dt1, dt2);
+            return CompareDataTable(dt1, dt2,isExact);
 
         }
-        public static bool CompareDataTable(DataTable dtA, DataTable dtB)
+        public static bool CompareDataTable(DataTable dtA, DataTable dtB,bool isExact)
         {
             if (dtA.Rows.Count != dtB.Rows.Count)   return false;
-            if (!CompareColumn(dtA.Columns, dtB.Columns)) return false;
+            if (isExact&&!CompareColumn(dtA.Columns, dtB.Columns)) return false;            
             //比内容 
             for (int i = 0; i < dtA.Rows.Count; i++)
             {

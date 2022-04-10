@@ -13,8 +13,7 @@ using System.Data.SQLite;
 namespace SQLCRACKER {
     public partial class stageSelection : Form {
         public static testStage stg = null; // 定义主界面全局变量
-        public static int currentStage; // 传递关卡数
-        public static string currentSQL; // 传递正确SQL
+        public static int currentStage; // 传递关卡数        
         public static mainForm MainForm;
         public static DataTable testDataTable; 
         
@@ -26,7 +25,7 @@ namespace SQLCRACKER {
                 button.Enabled = false;
                 button.Text = "--";               
             }            
-            string sql = "select stage_description,question_description,grammer_tip,correct_sql,tip from stageTest";
+            string sql = "select stage_description,question_description,grammer_tip,correct_sql,tip,is_exact from stageTest";
             testDataTable = SQLiteHelper.ExecuteDataSet(sqlConn.testInforDataSqliteConn, sql, null).Tables[0];
             
         }
@@ -61,6 +60,7 @@ namespace SQLCRACKER {
             stg.label_hint.Text = dataRow[2].ToString();
             stg.correctSql = dataRow[3].ToString();
             stg.tip = dataRow[4].ToString();
+            stg.isExact = dataRow[5].ToString() == "True";            
             this.Hide();           
             DialogResult result = stg.ShowDialog();
             this.Show();
