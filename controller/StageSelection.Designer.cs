@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel0 = new System.Windows.Forms.Panel();
+            this.buttonSandbox = new System.Windows.Forms.Button();
             this.label_belong = new System.Windows.Forms.Label();
             this.label_username = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -282,6 +283,7 @@
             // panel0
             // 
             this.panel0.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel0.Controls.Add(this.buttonSandbox);
             this.panel0.Controls.Add(this.label_belong);
             this.panel0.Controls.Add(this.label_username);
             this.panel0.Controls.Add(this.pictureBox1);
@@ -291,6 +293,20 @@
             this.panel0.Size = new System.Drawing.Size(1539, 118);
             this.panel0.TabIndex = 0;
             // 
+            // buttonSandbox
+            // 
+            this.buttonSandbox.BackColor = System.Drawing.Color.SandyBrown;
+            this.buttonSandbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSandbox.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonSandbox.ForeColor = System.Drawing.Color.Bisque;
+            this.buttonSandbox.Location = new System.Drawing.Point(1330, 31);
+            this.buttonSandbox.Name = "buttonSandbox";
+            this.buttonSandbox.Size = new System.Drawing.Size(143, 63);
+            this.buttonSandbox.TabIndex = 3;
+            this.buttonSandbox.Text = "沙盒模式";
+            this.buttonSandbox.UseVisualStyleBackColor = false;
+            this.buttonSandbox.Click += new System.EventHandler(this.createEmpty);
+            // 
             // label_belong
             // 
             this.label_belong.AutoSize = true;
@@ -299,7 +315,7 @@
             this.label_belong.Location = new System.Drawing.Point(135, 72);
             this.label_belong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_belong.Name = "label_belong";
-            this.label_belong.Size = new System.Drawing.Size(325, 27);
+            this.label_belong.Size = new System.Drawing.Size(262, 22);
             this.label_belong.TabIndex = 2;
             this.label_belong.Text = "您目前的进度：/50，所持金币数：";
             // 
@@ -311,13 +327,15 @@
             this.label_username.Location = new System.Drawing.Point(135, 18);
             this.label_username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_username.Name = "label_username";
-            this.label_username.Size = new System.Drawing.Size(202, 45);
+            this.label_username.Size = new System.Drawing.Size(159, 36);
             this.label_username.TabIndex = 1;
             this.label_username.Text = "，欢迎回来!";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(29, 20);
+            this.pictureBox1.BackgroundImage = global::SQLCRACKER.Properties.Resources.beagle;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 18);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(85, 80);
@@ -344,7 +362,7 @@
             this.flowLayoutPanel0.Location = new System.Drawing.Point(0, 120);
             this.flowLayoutPanel0.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel0.Name = "flowLayoutPanel0";
-            this.flowLayoutPanel0.Size = new System.Drawing.Size(1560, 858);
+            this.flowLayoutPanel0.Size = new System.Drawing.Size(1539, 858);
             this.flowLayoutPanel0.TabIndex = 1;
             // 
             // panel1z
@@ -2583,17 +2601,18 @@
             this.flowLayoutPanel0X.Size = new System.Drawing.Size(1481, 14);
             this.flowLayoutPanel0X.TabIndex = 12;
             // 
-            // StageSelection
+            // stageSelection
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1600, 992);
+            this.ClientSize = new System.Drawing.Size(1538, 992);
             this.Controls.Add(this.flowLayoutPanel0);
             this.Controls.Add(this.panel0);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "StageSelection";
+            this.Name = "stageSelection";
+            this.ShowIcon = false;
             this.Text = "选择关卡";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StageSelection_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StageSelection_FormClosed);
@@ -2854,5 +2873,6 @@
         private System.Windows.Forms.Label labelXz;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel0X;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSandbox;
     }
 }

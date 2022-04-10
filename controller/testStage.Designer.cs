@@ -116,7 +116,7 @@ namespace SQLCRACKER
             this.label_stage.Location = new System.Drawing.Point(31, 25);
             this.label_stage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_stage.Name = "label_stage";
-            this.label_stage.Size = new System.Drawing.Size(110, 31);
+            this.label_stage.Size = new System.Drawing.Size(88, 26);
             this.label_stage.TabIndex = 0;
             this.label_stage.Text = "关卡描述";
             // 
@@ -163,10 +163,10 @@ namespace SQLCRACKER
             this.button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clear.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_clear.ForeColor = System.Drawing.Color.Tomato;
-            this.button_clear.Location = new System.Drawing.Point(1361, 164);
+            this.button_clear.Location = new System.Drawing.Point(1361, 220);
             this.button_clear.Margin = new System.Windows.Forms.Padding(4);
             this.button_clear.Name = "button_clear";
-            this.button_clear.Size = new System.Drawing.Size(81, 112);
+            this.button_clear.Size = new System.Drawing.Size(81, 56);
             this.button_clear.TabIndex = 4;
             this.button_clear.Text = "清空";
             this.button_clear.UseVisualStyleBackColor = false;
@@ -228,7 +228,7 @@ namespace SQLCRACKER
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.MaximumSize = new System.Drawing.Size(72, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 80);
+            this.label1.Size = new System.Drawing.Size(44, 68);
             this.label1.TabIndex = 3;
             this.label1.Text = "双击\r\n列表项\r\n以插进\r\n语句";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1061,11 +1061,10 @@ namespace SQLCRACKER
             // 
             this.listBox_row.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.listBox_row.FormattingEnabled = true;
-            this.listBox_row.ItemHeight = 17;
             this.listBox_row.Location = new System.Drawing.Point(8, 30);
             this.listBox_row.Margin = new System.Windows.Forms.Padding(4);
             this.listBox_row.Name = "listBox_row";
-            this.listBox_row.Size = new System.Drawing.Size(192, 140);
+            this.listBox_row.Size = new System.Drawing.Size(192, 134);
             this.listBox_row.TabIndex = 0;
             this.listBox_row.TabStop = false;
             this.listBox_row.DoubleClick += new System.EventHandler(this.listBox_row_DoubleClick);
@@ -1087,27 +1086,28 @@ namespace SQLCRACKER
             // 
             this.listBox_table.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.listBox_table.FormattingEnabled = true;
-            this.listBox_table.ItemHeight = 17;
             this.listBox_table.Location = new System.Drawing.Point(8, 30);
             this.listBox_table.Margin = new System.Windows.Forms.Padding(4);
             this.listBox_table.Name = "listBox_table";
-            this.listBox_table.Size = new System.Drawing.Size(180, 140);
+            this.listBox_table.Size = new System.Drawing.Size(180, 134);
             this.listBox_table.TabIndex = 0;
             this.listBox_table.TabStop = false;
             this.listBox_table.DoubleClick += new System.EventHandler(this.listBox_table_DoubleClick);
             // 
             // button_hint
             // 
-            this.button_hint.Enabled = false;
+            this.button_hint.BackColor = System.Drawing.Color.NavajoWhite;
+            this.button_hint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_hint.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_hint.Location = new System.Drawing.Point(1113, 79);
+            this.button_hint.ForeColor = System.Drawing.Color.Tomato;
+            this.button_hint.Location = new System.Drawing.Point(1361, 164);
             this.button_hint.Margin = new System.Windows.Forms.Padding(4);
             this.button_hint.Name = "button_hint";
             this.button_hint.Size = new System.Drawing.Size(81, 48);
             this.button_hint.TabIndex = 9;
             this.button_hint.Text = "提示";
-            this.button_hint.UseVisualStyleBackColor = true;
-            this.button_hint.Visible = false;
+            this.button_hint.UseVisualStyleBackColor = false;
+            this.button_hint.Click += new System.EventHandler(this.button_hint_Click);
             // 
             // panel1
             // 
@@ -1130,7 +1130,7 @@ namespace SQLCRACKER
             this.label2.Location = new System.Drawing.Point(25, 56);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 20);
+            this.label2.Size = new System.Drawing.Size(138, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "已获得过首次通关奖励:P";
             // 
@@ -1141,7 +1141,7 @@ namespace SQLCRACKER
             this.label_res.Location = new System.Drawing.Point(23, 27);
             this.label_res.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_res.Name = "label_res";
-            this.label_res.Size = new System.Drawing.Size(99, 27);
+            this.label_res.Size = new System.Drawing.Size(80, 22);
             this.label_res.TabIndex = 0;
             this.label_res.Text = "回答正确!";
             // 
@@ -1152,14 +1152,14 @@ namespace SQLCRACKER
             this.label_hint.Location = new System.Drawing.Point(35, 128);
             this.label_hint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_hint.Name = "label_hint";
-            this.label_hint.Size = new System.Drawing.Size(157, 15);
+            this.label_hint.Size = new System.Drawing.Size(125, 12);
             this.label_hint.TabIndex = 11;
             this.label_hint.Text = "语法提示会显示在这里";
             // 
             // toolStripProgressBar1
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(69, 22);
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(56, 21);
             this.toolStripProgressBar1.Text = "当前关卡";
             // 
             // toolStripProgressBar2
@@ -1171,7 +1171,7 @@ namespace SQLCRACKER
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(54, 22);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(45, 21);
             this.toolStripStatusLabel1.Text = "???/50";
             // 
             // statusStrip1
@@ -1181,10 +1181,10 @@ namespace SQLCRACKER
             this.toolStripProgressBar1,
             this.toolStripProgressBar2,
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 793);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 795);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1467, 28);
+            this.statusStrip1.Size = new System.Drawing.Size(1467, 26);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";

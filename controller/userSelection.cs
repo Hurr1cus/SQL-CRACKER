@@ -84,13 +84,14 @@ namespace SQLCRACKER {
             int indx = this.dataGridView1.CurrentRow.Index; // 当前选中的项目
             string data = this.dataGridView1.Rows[indx].Cells[0].Value.ToString(); // 当前选中的用户名
             userData.userName = data;
-            string dtsql = "select user_name,stage,coin from user where user_name= '" + data + "'";
+            string dtsql = "select user_name,stage,coin,current_selection_stage from user where user_name= '" + data + "'";
             sqlConn.userDataSqliteConn.Open();
             SQLiteCommand sqlcommand = new SQLiteCommand(dtsql, sqlConn.userDataSqliteConn);
             IDataReader dr = sqlcommand.ExecuteReader();
             while (dr.Read()) {
                 onStage = dr["stage"].ToString(); // 存放当前关卡
                 onCoin = dr["coin"].ToString(); // 存放当前金币数量
+                userData.currentSelectionStage = int.Parse(dr["current_selection_stage"].ToString());
                 
             }
             userData.stage = Convert.ToInt32(onStage);

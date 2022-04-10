@@ -57,7 +57,22 @@ namespace SQLCRACKER
         }
 
         private void button2_Click(object sender, EventArgs e) {
-            MessageBox.Show("开发中！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (comboBox1.Text == "")
+            {
+                MessageBox.Show("请先选择一个存档!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            testChoice testChoice=new testChoice();
+            this.Hide();
+            //testChoice.labelQuestion.Text = "";
+            DialogResult dialogResult = testChoice.ShowDialog();
+            if (dialogResult == DialogResult.Cancel)
+                this.Visible = true;
+        }
+
+        private void buttonContact_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hurricus\t\tMail:hurricus@foxmail.com\tGithub:Hurr1cus;\nHiraumi\t\tMail:hiraumi@foxmail.com\tGithub:Hiraumi;\nHawthorn\t\tMail:2313348831@qq.com;\n\n© 2022 Hurricus & Hiraumi Project", "开发人员", MessageBoxButtons.OK);
         }
     }
 }

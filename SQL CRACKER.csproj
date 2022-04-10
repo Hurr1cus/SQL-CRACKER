@@ -203,6 +203,9 @@
     <None Include="DataBase\Data.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="DataBase\testInfor.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="DataBase\userData.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -228,6 +231,7 @@
     <Content Include="Resources\BackBlock.png" />
     <Content Include="Resources\backBlockAndCastle.png" />
     <Content Include="Resources\backGroundImage.png" />
+    <Content Include="Resources\beagle.png" />
     <Content Include="Resources\folder.png" />
     <Content Include="Resources\title.bmp" />
     <Content Include="Resources\字体.png" />

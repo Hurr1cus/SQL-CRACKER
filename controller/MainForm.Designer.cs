@@ -39,6 +39,7 @@ namespace SQLCRACKER
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonContact = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -113,12 +114,24 @@ namespace SQLCRACKER
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
+            // 
+            // buttonContact
+            // 
+            this.buttonContact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
+            this.buttonContact.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.buttonContact, "buttonContact");
+            this.buttonContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonContact.Name = "buttonContact";
+            this.buttonContact.UseVisualStyleBackColor = false;
+            this.buttonContact.Click += new System.EventHandler(this.buttonContact_Click);
             // 
             // mainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonContact);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.comboBox1);
@@ -150,6 +163,7 @@ namespace SQLCRACKER
         public System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonContact;
     }
 }
 

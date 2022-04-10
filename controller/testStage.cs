@@ -10,17 +10,16 @@ namespace SQLCRACKER {
     public partial class testStage : Form {       
         public string correctSql = "";
         public stageSelection stageSelection = null;
+        public string tip = "";
         public testStage() {
             InitializeComponent();
         }
 
-        private void Stage_Load(object sender, EventArgs e) {
-            // 初始化
-            dataGridView1.DataSource = null;
-            listBox_table.Items.Clear();
-            listBox_row.Items.Clear();
+        private void Stage_Load(object sender, EventArgs e) {         
             panel1.Visible = false;
-            linkDataBase();
+            //linkDataBase();
+            listBox_table.Items.Add("emp");
+            listBox_table.Items.Add("dept");
         }
 
         public void linkDataBase() {          
@@ -62,11 +61,16 @@ namespace SQLCRACKER {
             try {
                 string sqlUser = text_sql.Text;
                 dataGridView1.DataSource = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlUser, null).Tables[0];
-                bool isCorrect = compare.compareSql(sqlUser, correctSql);
-                String correctString = "恭喜，您的SQL语句正确:D";
-                String wrongString = "您的SQL语句错误，请仔细检查:(";
-                MessageBox.Show(isCorrect ? correctString : wrongString);
-                if (isCorrect) panel1.Visible = true;                
+                if (correctSql == "Sandbox") return;
+                bool isCorrect = compare.compareSql(sqlUser, correctSql);            
+                if (isCorrect)
+                {
+                    panel1.Visible = true;
+                }
+                else
+                {
+                    MessageBox.Show("您的SQL语句错误，请仔细检查:(", "语句错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 if (isCorrect && stageSelection.currentStage >= userData.stage) {
                     label2.Text = "获得通关奖励：金钱 * 10";
                     userData.coin += 10;
@@ -83,13 +87,10 @@ namespace SQLCRACKER {
         }       
         private void Stage_FormClosing(object sender, FormClosingEventArgs e) {
             stageSelection.stg = null;
-            saveData();
-        }
-        public void saveData() {
-            string updateSql = "UPDATE `user` SET stage=" + userData.stage + ",coin=" + userData.coin + " WHERE user_name='" + userData.userName + "';";
-            SQLiteHelper.ExecuteDataSet(sqlConn.userDataSqliteConn, updateSql, null);
+            userData.saveData();
             stageSelection.refresh();
         }
+        
 
         // 下面是快捷输入
         private void listBox_table_DoubleClick(object sender, EventArgs e) {
@@ -141,6 +142,20 @@ namespace SQLCRACKER {
             
         }
 
-
+        private void button_hint_Click(object sender, EventArgs e)
+        {
+            if (stageSelection.currentStage == userData.stage)
+            {
+                DialogResult result = MessageBox.Show("查看提示需要消耗20金币并清空已输入内容，确认要查看吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result != DialogResult.Yes) return;
+                if (userData.coin < 20)
+                {
+                    MessageBox.Show("金币不够辣！", "金币不足", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                userData.coin -= 20;
+            }
+            text_sql.Text = tip;
+        }
     }
 }
