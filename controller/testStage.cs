@@ -126,17 +126,19 @@ namespace SQLCRACKER {
 
         private void buttonTipClick(object sender, EventArgs e)
         {
-            if (stageSelection.currentStage == userData.Stage)
+            if (stageSelection.currentStage < userData.Stage)
             {
-                DialogResult result = MessageBox.Show("查看提示需要消耗20金币并清空已输入内容，确认要查看吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result != DialogResult.Yes) return;
-                if (userData.Coin < 20)
-                {
-                    MessageBox.Show("金币不够辣！", "金币不足", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                userData.Coin -= 20;
+                text_sql.Text = correctSql;
+                return;
             }
+            DialogResult result = MessageBox.Show("查看提示需要消耗20金币并清空已输入内容，确认要查看吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result != DialogResult.Yes) return;
+            if (userData.Coin < 20)
+            {
+                MessageBox.Show("金币不够辣！", "金币不足", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            userData.Coin -= 20;           
             text_sql.Text = tip;
         }
         private void linkDataBase()

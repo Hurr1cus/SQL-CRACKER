@@ -473,7 +473,7 @@
             this.label1e.Name = "label1e";
             this.label1e.Size = new System.Drawing.Size(208, 64);
             this.label1e.TabIndex = 1;
-            this.label1e.Text = "关卡1-5\r\n字段查询并计算";
+            this.label1e.Text = "关卡1-5\r\n去重字段查询";
             this.label1e.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion5
@@ -1509,7 +1509,7 @@
             this.label6d.Name = "label6d";
             this.label6d.Size = new System.Drawing.Size(208, 64);
             this.label6d.TabIndex = 1;
-            this.label6d.Text = "关卡6-4\r\n截取到那一位";
+            this.label6d.Text = "关卡6-4\r\n截取字符串";
             this.label6d.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion29
@@ -1546,7 +1546,7 @@
             this.label6c.Name = "label6c";
             this.label6c.Size = new System.Drawing.Size(208, 64);
             this.label6c.TabIndex = 1;
-            this.label6c.Text = "关卡6-3\r\n截取到整数";
+            this.label6c.Text = "关卡6-3\r\n大小写字母变换";
             this.label6c.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion28
@@ -1583,7 +1583,7 @@
             this.label6e.Name = "label6e";
             this.label6e.Size = new System.Drawing.Size(208, 64);
             this.label6e.TabIndex = 1;
-            this.label6e.Text = "关卡6-5\r\n截取和四舍五入";
+            this.label6e.Text = "关卡6-5\r\n首字母大写";
             this.label6e.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion30
@@ -1686,7 +1686,7 @@
             this.label6z.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.label6z.Size = new System.Drawing.Size(187, 135);
             this.label6z.TabIndex = 9;
-            this.label6z.Text = "第六章\r\nROUND\r\nTRUNC";
+            this.label6z.Text = "第六章\r\n数据处理\r\n";
             // 
             // flowLayoutPanel06
             // 
@@ -1731,7 +1731,7 @@
             this.label7d.Name = "label7d";
             this.label7d.Size = new System.Drawing.Size(208, 64);
             this.label7d.TabIndex = 1;
-            this.label7d.Text = "关卡3-4\r\n多条件综合查询(1)";
+            this.label7d.Text = "关卡7-4\r\n交叉点";
             this.label7d.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion34
@@ -1768,7 +1768,7 @@
             this.label7c.Name = "label7c";
             this.label7c.Size = new System.Drawing.Size(208, 64);
             this.label7c.TabIndex = 1;
-            this.label7c.Text = "关卡3-3\r\n文本多条件查询";
+            this.label7c.Text = "关卡7-3\r\n又一个分支";
             this.label7c.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion33
@@ -1805,7 +1805,7 @@
             this.label7e.Name = "label7e";
             this.label7e.Size = new System.Drawing.Size(208, 64);
             this.label7e.TabIndex = 1;
-            this.label7e.Text = "关卡3-5\r\n多条件综合查询(2)";
+            this.label7e.Text = "关卡7-5\r\n多条件的路口";
             this.label7e.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion35
@@ -1842,7 +1842,7 @@
             this.label7b.Name = "label7b";
             this.label7b.Size = new System.Drawing.Size(208, 64);
             this.label7b.TabIndex = 1;
-            this.label7b.Text = "关卡3-2\r\n或查询";
+            this.label7b.Text = "关卡7-2\r\n十字路口";
             this.label7b.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion32
@@ -1879,7 +1879,7 @@
             this.label7a.Name = "label7a";
             this.label7a.Size = new System.Drawing.Size(208, 64);
             this.label7a.TabIndex = 1;
-            this.label7a.Text = "关卡3-1\r\n与查询";
+            this.label7a.Text = "关卡7-1\r\n三岔路口";
             this.label7a.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion31
@@ -1953,7 +1953,7 @@
             this.label8d.Name = "label8d";
             this.label8d.Size = new System.Drawing.Size(208, 64);
             this.label8d.TabIndex = 1;
-            this.label8d.Text = "关卡3-4\r\n多条件综合查询(1)";
+            this.label8d.Text = "关卡8-4\r\n筛选、分组再汇总";
             this.label8d.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion39
@@ -1990,7 +1990,7 @@
             this.label8c.Name = "label8c";
             this.label8c.Size = new System.Drawing.Size(208, 64);
             this.label8c.TabIndex = 1;
-            this.label8c.Text = "关卡3-3\r\n文本多条件查询";
+            this.label8c.Text = "关卡8-3\r\n先分组再汇总";
             this.label8c.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion38
@@ -2027,7 +2027,7 @@
             this.label8e.Name = "label8e";
             this.label8e.Size = new System.Drawing.Size(208, 64);
             this.label8e.TabIndex = 1;
-            this.label8e.Text = "关卡3-5\r\n多条件综合查询(2)";
+            this.label8e.Text = "关卡8-5\r\n汇总汇总再汇总";
             this.label8e.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion40
@@ -2064,7 +2064,7 @@
             this.label8b.Name = "label8b";
             this.label8b.Size = new System.Drawing.Size(208, 64);
             this.label8b.TabIndex = 1;
-            this.label8b.Text = "关卡3-2\r\n或查询";
+            this.label8b.Text = "关卡8-2\r\n去重后再汇总";
             this.label8b.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion37
@@ -2101,7 +2101,7 @@
             this.label8a.Name = "label8a";
             this.label8a.Size = new System.Drawing.Size(208, 64);
             this.label8a.TabIndex = 1;
-            this.label8a.Text = "关卡3-1\r\n与查询";
+            this.label8a.Text = "关卡8-1\r\n汇总时间";
             this.label8a.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion36
@@ -2175,7 +2175,7 @@
             this.label9d.Name = "label9d";
             this.label9d.Size = new System.Drawing.Size(208, 64);
             this.label9d.TabIndex = 1;
-            this.label9d.Text = "关卡3-4\r\n多条件综合查询(1)";
+            this.label9d.Text = "关卡9-4\r\n小心重复";
             this.label9d.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion44
@@ -2212,7 +2212,7 @@
             this.label9c.Name = "label9c";
             this.label9c.Size = new System.Drawing.Size(208, 64);
             this.label9c.TabIndex = 1;
-            this.label9c.Text = "关卡3-3\r\n文本多条件查询";
+            this.label9c.Text = "关卡9-3\r\n多个子查询";
             this.label9c.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion43
@@ -2249,7 +2249,7 @@
             this.label9e.Name = "label9e";
             this.label9e.Size = new System.Drawing.Size(208, 64);
             this.label9e.TabIndex = 1;
-            this.label9e.Text = "关卡3-5\r\n多条件综合查询(2)";
+            this.label9e.Text = "关卡9-5\r\n综合子查询";
             this.label9e.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion45
@@ -2286,7 +2286,7 @@
             this.label9b.Name = "label9b";
             this.label9b.Size = new System.Drawing.Size(208, 64);
             this.label9b.TabIndex = 1;
-            this.label9b.Text = "关卡3-2\r\n或查询";
+            this.label9b.Text = "关卡9-2\r\n子查询里带条件";
             this.label9b.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion42
@@ -2323,7 +2323,7 @@
             this.label9a.Name = "label9a";
             this.label9a.Size = new System.Drawing.Size(208, 64);
             this.label9a.TabIndex = 1;
-            this.label9a.Text = "关卡3-1\r\n与查询";
+            this.label9a.Text = "关卡9-1\r\n子查询";
             this.label9a.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion41
@@ -2397,7 +2397,7 @@
             this.labelXd.Name = "labelXd";
             this.labelXd.Size = new System.Drawing.Size(208, 64);
             this.labelXd.TabIndex = 1;
-            this.labelXd.Text = "关卡3-4\r\n多条件综合查询(1)";
+            this.labelXd.Text = "关卡10-4\r\n多表查询综合(1)";
             this.labelXd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion49
@@ -2434,7 +2434,7 @@
             this.labelXc.Name = "labelXc";
             this.labelXc.Size = new System.Drawing.Size(208, 64);
             this.labelXc.TabIndex = 1;
-            this.labelXc.Text = "关卡3-3\r\n文本多条件查询";
+            this.labelXc.Text = "关卡10-3\r\n一张表也是多张表";
             this.labelXc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion48
@@ -2471,7 +2471,7 @@
             this.labelXe.Name = "labelXe";
             this.labelXe.Size = new System.Drawing.Size(208, 64);
             this.labelXe.TabIndex = 1;
-            this.labelXe.Text = "关卡3-5\r\n多条件综合查询(2)";
+            this.labelXe.Text = "关卡10-5\r\n多表查询综合(2)";
             this.labelXe.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion50
@@ -2509,7 +2509,7 @@
             this.labelXb.Name = "labelXb";
             this.labelXb.Size = new System.Drawing.Size(208, 64);
             this.labelXb.TabIndex = 1;
-            this.labelXb.Text = "关卡3-2\r\n或查询";
+            this.labelXb.Text = "关卡10-2\r\n第一次多表查询";
             this.labelXb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // button1
@@ -2561,7 +2561,7 @@
             this.labelXa.Name = "labelXa";
             this.labelXa.Size = new System.Drawing.Size(208, 64);
             this.labelXa.TabIndex = 1;
-            this.labelXa.Text = "关卡3-1\r\n与查询";
+            this.labelXa.Text = "关卡10-1\r\n多表查询的第一步";
             this.labelXa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // buttonQuestion46

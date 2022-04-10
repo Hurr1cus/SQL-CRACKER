@@ -19,7 +19,7 @@ namespace SQLCRACKER
         {
             InitializeComponent();
             getInfor();
-            if (userData.CurrentSelectionStage == 10)
+            if (userData.CurrentSelectionStage == 11)
             {
                 MessageBox.Show("您已完成所有题目!");
             }
@@ -27,7 +27,7 @@ namespace SQLCRACKER
         }
         private void getInfor()
         {            
-            int index = userData.CurrentSelectionStage - 1;
+            int index = userData.CurrentSelectionStage >10? 9:userData.CurrentSelectionStage - 1;
             toolStripStatusLabelCurrentQuestion.Text = "当前第" + testChoiceTable.Rows[index]["index"].ToString() + "题";
             toolStripProgressBar1.Value = index * 10 + 10;
             labelQuestion.Text = testChoiceTable.Rows[index ]["question_description"].ToString();
@@ -49,9 +49,11 @@ namespace SQLCRACKER
                 return;
             }
             MessageBox.Show("答对了:D", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            if (userData.CurrentSelectionStage == 10)
+            if (userData.CurrentSelectionStage > 9)
             {
                 MessageBox.Show("您已完成所有题目!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                userData.CurrentSelectionStage++;
+                return;
             }
             else
             {
