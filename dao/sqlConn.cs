@@ -9,7 +9,7 @@ namespace SQLCRACKER
 {
     public static class sqlConn
     {
-        private static string testDataPath = @".\DataBase\Data.db";
+        private static string testDataPath = @".\DataBase\Data.db;Read Only=True;";
         private static string userDataPath = @".\DataBase\userData.db";
         private static string testInforDataPath = @".\DataBase\testInfor.db";
         public static SQLiteConnection testDataSqliteConn = new SQLiteConnection("data source=" + testDataPath);

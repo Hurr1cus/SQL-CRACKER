@@ -65,8 +65,17 @@ namespace SQLCRACKER {
                 }
 
             }
+            catch(SQLiteException ex)
+            {
+                if (ex.ErrorCode == ((int)SQLiteErrorCode.ReadOnly))
+                {
+                    MessageBox.Show("请不要对该数据库做增删改操作！");
+                    return;
+                }
+                MessageBox.Show(ex.Message);
+            }
             catch (Exception ex) {
-                MessageBox.Show(ex.StackTrace);
+                MessageBox.Show(ex.Message);
             }
         }       
         private void Stage_FormClosing(object sender, FormClosingEventArgs e) {
