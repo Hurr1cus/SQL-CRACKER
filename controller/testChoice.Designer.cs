@@ -39,8 +39,7 @@
             this.buttonChoice1 = new System.Windows.Forms.Button();
             this.buttonChoice2 = new System.Windows.Forms.Button();
             this.buttonChoice3 = new System.Windows.Forms.Button();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.notifyIcon2 = new System.Windows.Forms.NotifyIcon(this.components);
+
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -201,18 +200,7 @@
             this.buttonChoice3.Text = "D选项";
             this.buttonChoice3.UseVisualStyleBackColor = false;
             this.buttonChoice3.Click += new System.EventHandler(this.optionClick);
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            // 
-            // notifyIcon2
-            // 
-            this.notifyIcon2.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon2.Icon")));
-            this.notifyIcon2.Text = "notifyIcon2";
-            this.notifyIcon2.Visible = true;
+
             // 
             // testChoice
             // 
@@ -260,7 +248,6 @@
         public System.Windows.Forms.Button buttonChoice2;
         public System.Windows.Forms.Button buttonChoice3;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelCurrentQuestion;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.NotifyIcon notifyIcon2;
+
     }
 }

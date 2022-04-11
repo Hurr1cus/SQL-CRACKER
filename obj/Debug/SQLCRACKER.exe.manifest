@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SQLCRACKER.exe" size="4217856">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SQLCRACKER.exe" size="2054656">
       <assemblyIdentity name="SQLCRACKER" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3HAmpMggW7gWCBSt8KmCO9VZ4FBxQ/eOsB2A0Dpn+kE=</dsig:DigestValue>
+        <dsig:DigestValue>HcO51GJjV5Evny54oK/E1kFG+5L3k1JP8wqApZ8xhVU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
