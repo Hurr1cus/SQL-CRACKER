@@ -97,6 +97,11 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>SQLCRACKER.Program</StartupObject>
+  </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
@@ -182,6 +187,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="controller\mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,6 +196,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="controller\rank.resx">
       <DependentUpon>rank.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="controller\testStage.resx">
       <DependentUpon>testStage.cs</DependentUpon>

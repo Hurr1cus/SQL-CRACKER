@@ -14,8 +14,8 @@ namespace SQLCRACKER
         {
             string sqlFormatted1 = sqlFormat.getSqlFormatted(sql1);
             string sqlFormatted2 = sqlFormat.getSqlFormatted(sql2);
-            DataTable dt1 = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlFormatted1, null).Tables[0];
-            DataTable dt2 = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlFormatted2, null).Tables[0];           
+            DataTable dt1 = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlFormatted1).Tables[0];
+            DataTable dt2 = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlFormatted2).Tables[0];           
             return CompareDataTable(dt1, dt2,isExact);
 
         }

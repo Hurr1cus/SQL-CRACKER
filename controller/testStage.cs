@@ -29,7 +29,7 @@ namespace SQLCRACKER {
             string tableName = "";
             if (listBox_table.SelectedItem == null) return;
             tableName = listBox_table.SelectedItem.ToString();
-            DataSet myds = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, "SELECT * FROM " + tableName, null); 
+            DataSet myds = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, "SELECT * FROM " + tableName); 
             dataGridView1.DataSource = myds.Tables[0];
             //显示指定表的字段名
             string tnSql = "Pragma Table_Info(" + tableName + ")";
@@ -47,7 +47,7 @@ namespace SQLCRACKER {
         private void buttonSubmitClick(object sender, EventArgs e) {
             try {
                 string sqlUser = text_sql.Text;
-                dataGridView1.DataSource = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlUser, null).Tables[0];
+                dataGridView1.DataSource = SQLiteHelper.ExecuteDataSet(sqlConn.testDataSqliteConn, sqlUser).Tables[0];
                 if (correctSql == "sandbox") return;
                 bool isCorrect = compare.compareSql(sqlUser, correctSql,isExact);
                 if (!isCorrect) { 

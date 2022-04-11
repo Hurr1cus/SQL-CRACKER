@@ -27,7 +27,7 @@ namespace SQLCRACKER
         public static void saveData()
         {
             string updateSql = "UPDATE `user` SET stage=" + userData.Stage + ",coin=" + userData.Coin + ",current_selection_stage="+CurrentSelectionStage+" WHERE user_name='" + userData.UserName + "';";
-            SQLiteHelper.ExecuteDataSet(sqlConn.userDataSqliteConn, updateSql, null);
+            SQLiteHelper.ExecuteDataSet(sqlConn.userDataSqliteConn, updateSql);
         }
 
     }

@@ -14,7 +14,7 @@ namespace SQLCRACKER
     public partial class testChoice : Form
     {
         private int correctOption;
-        private static DataTable testChoiceTable = SQLiteHelper.ExecuteDataSet(sqlConn.testInforDataSqliteConn, "select * from choiceTest", null).Tables[0];
+        private static DataTable testChoiceTable = SQLiteHelper.ExecuteDataSet(sqlConn.testInforDataSqliteConn, "select * from choiceTest").Tables[0];
         public testChoice()
         {
             InitializeComponent();

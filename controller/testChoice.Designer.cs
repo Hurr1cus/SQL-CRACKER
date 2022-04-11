@@ -23,6 +23,8 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(testChoice));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelCurrentQuestion = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabeTotalQuestion = new System.Windows.Forms.ToolStripStatusLabel();
@@ -37,6 +39,8 @@
             this.buttonChoice1 = new System.Windows.Forms.Button();
             this.buttonChoice2 = new System.Windows.Forms.Button();
             this.buttonChoice3 = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.notifyIcon2 = new System.Windows.Forms.NotifyIcon(this.components);
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -198,6 +202,18 @@
             this.buttonChoice3.UseVisualStyleBackColor = false;
             this.buttonChoice3.Click += new System.EventHandler(this.optionClick);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // notifyIcon2
+            // 
+            this.notifyIcon2.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon2.Icon")));
+            this.notifyIcon2.Text = "notifyIcon2";
+            this.notifyIcon2.Visible = true;
+            // 
             // testChoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -216,9 +232,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "testChoice";
-            this.ShowIcon = false;
             this.Text = " 做题";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -244,5 +260,7 @@
         public System.Windows.Forms.Button buttonChoice2;
         public System.Windows.Forms.Button buttonChoice3;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelCurrentQuestion;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.NotifyIcon notifyIcon2;
     }
 }

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SQLCRACKER.exe" size="2378752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SQLCRACKER.exe" size="4653056">
       <assemblyIdentity name="SQLCRACKER" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xO5cbNUC1pmC/HbSg+GHKQgJ5cI6W8qKQdpfRJcWIsU=</dsig:DigestValue>
+        <dsig:DigestValue>eioGxwEciDGB1tEaeJUi3+lxX8Dw/IphjkiacjzpxYk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,13 +78,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Icon.ico" size="76043">
+  <file name="Icon.ico" size="67646">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>9npSTBWNJ4cskZOj01C7qHAG/lA1dgf3Sz1GfBcNoug=</dsig:DigestValue>
+      <dsig:DigestValue>uIGV3BIfn/S8dugCUfIw0DU3mKPzA9EwSXCVB1wk2Es=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\BackBlock.png" size="38722">

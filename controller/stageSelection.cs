@@ -26,7 +26,7 @@ namespace SQLCRACKER {
                 button.Text = "--";               
             }            
             string sql = "select stage_description,question_description,grammer_tip,correct_sql,tip,is_exact from stageTest";
-            testDataTable = SQLiteHelper.ExecuteDataSet(sqlConn.testInforDataSqliteConn, sql, null).Tables[0];
+            testDataTable = SQLiteHelper.ExecuteDataSet(sqlConn.testInforDataSqliteConn, sql).Tables[0];
             
         }
         

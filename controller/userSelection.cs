@@ -105,7 +105,7 @@ namespace SQLCRACKER {
         private void linkDataBase()
         {
             string sql = "SELECT user_name 用户名 FROM user";
-            DataSet myds = SQLiteHelper.ExecuteDataSet(sqlConn.userDataSqliteConn, sql, null);
+            DataSet myds = SQLiteHelper.ExecuteDataSet(sqlConn.userDataSqliteConn, sql);
             dataGridView1.DataSource = myds.Tables[0];
         }
     }

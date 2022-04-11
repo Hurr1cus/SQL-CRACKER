@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(stageSelection));
             this.panel0 = new System.Windows.Forms.Panel();
             this.buttonSandbox = new System.Windows.Forms.Button();
             this.label_belong = new System.Windows.Forms.Label();
@@ -2609,10 +2610,10 @@
             this.Controls.Add(this.flowLayoutPanel0);
             this.Controls.Add(this.panel0);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "stageSelection";
-            this.ShowIcon = false;
             this.Text = "选择关卡";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StageSelection_FormClosing);
             this.Load += new System.EventHandler(this.StageSelection_Load);
