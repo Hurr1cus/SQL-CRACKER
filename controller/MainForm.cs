@@ -18,6 +18,9 @@ namespace SQLCRACKER
         public mainForm()
         {
             InitializeComponent();
+            pictureBox2.Parent = pictureBox1;
+            pictureBox2.Left = 558;
+            pictureBox2.Top = 63;
         }
 
         private void labelChooseFileClick(object sender, EventArgs e)

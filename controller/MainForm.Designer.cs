@@ -84,6 +84,7 @@ namespace SQLCRACKER
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::SQLCRACKER.Properties.Resources.backBlockAndCastle;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
@@ -105,8 +106,9 @@ namespace SQLCRACKER
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SQLCRACKER.Properties.Resources.title;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::SQLCRACKER.Properties.Resources.title;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
@@ -131,9 +133,9 @@ namespace SQLCRACKER
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonContact);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.buttonShowRank);

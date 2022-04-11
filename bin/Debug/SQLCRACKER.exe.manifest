@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SQLCRACKER.exe" size="4653056">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SQLCRACKER.exe" size="4217856">
       <assemblyIdentity name="SQLCRACKER" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eioGxwEciDGB1tEaeJUi3+lxX8Dw/IphjkiacjzpxYk=</dsig:DigestValue>
+        <dsig:DigestValue>3HAmpMggW7gWCBSt8KmCO9VZ4FBxQ/eOsB2A0Dpn+kE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -132,16 +132,16 @@
       <dsig:DigestValue>j5ysMz2T+jzx+c1Nw89FXDHhdlQxRMenF4O39EAs8oo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Resources\title.bmp" size="47752">
+  <file name="Resources\icon.png" size="101140">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dviVYnAzDNKX0qfkcMXU92Teawp9sel07zLYnAAXeUg=</dsig:DigestValue>
+      <dsig:DigestValue>qPpxfrPVMz/2WwO4iYlZpXhMwKucnl4zxNrUT9m3Oxo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Resources\字体.png" size="47752">
+  <file name="Resources\title.bmp" size="47752">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />

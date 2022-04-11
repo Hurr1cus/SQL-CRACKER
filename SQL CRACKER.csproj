@@ -240,8 +240,8 @@
     <Content Include="Resources\backGroundImage.png" />
     <Content Include="Resources\beagle.png" />
     <Content Include="Resources\folder.png" />
+    <Content Include="Resources\icon.png" />
     <Content Include="Resources\title.bmp" />
-    <Content Include="Resources\字体.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup />
