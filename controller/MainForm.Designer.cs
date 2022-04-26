@@ -35,7 +35,7 @@ namespace SQLCRACKER
             this.buttonStartChoice = new System.Windows.Forms.Button();
             this.buttonShowRank = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.selectUser = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -69,7 +69,7 @@ namespace SQLCRACKER
             this.buttonStartChoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.buttonStartChoice.Name = "buttonStartChoice";
             this.buttonStartChoice.UseVisualStyleBackColor = false;
-            this.buttonStartChoice.Click += new System.EventHandler(this.button2_Click);
+            this.buttonStartChoice.Click += new System.EventHandler(this.startChoiceClick);
             // 
             // buttonShowRank
             // 
@@ -79,7 +79,7 @@ namespace SQLCRACKER
             this.buttonShowRank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.buttonShowRank.Name = "buttonShowRank";
             this.buttonShowRank.UseVisualStyleBackColor = false;
-            this.buttonShowRank.Click += new System.EventHandler(this.buttonStartChoiceClick);
+            this.buttonShowRank.Click += new System.EventHandler(this.showRankClick);
             // 
             // pictureBox1
             // 
@@ -88,15 +88,15 @@ namespace SQLCRACKER
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // button4
+            // selectUser
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.selectUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(216)))), ((int)(((byte)(176)))));
+            this.selectUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.selectUser, "selectUser");
+            this.selectUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.selectUser.Name = "selectUser";
+            this.selectUser.UseVisualStyleBackColor = false;
+            this.selectUser.Click += new System.EventHandler(this.selectUserClick);
             // 
             // comboBox1
             // 
@@ -137,7 +137,7 @@ namespace SQLCRACKER
             this.Controls.Add(this.buttonContact);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.selectUser);
             this.Controls.Add(this.buttonShowRank);
             this.Controls.Add(this.buttonStartChoice);
             this.Controls.Add(this.labelChooseFile);
@@ -161,7 +161,7 @@ namespace SQLCRACKER
         private System.Windows.Forms.Button buttonStartChoice;
         private System.Windows.Forms.Button buttonShowRank;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button selectUser;
         public System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;

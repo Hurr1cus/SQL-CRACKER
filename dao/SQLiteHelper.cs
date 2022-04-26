@@ -25,14 +25,17 @@ namespace SQLCRACKER {
             cn.Close();
             return ds;
         }
-        public static int ExecuteNonQuery(IDbCommand cmd) {
-            if (cmd.Connection.State == ConnectionState.Closed)
-                cmd.Connection.Open();
+        public static int ExecuteNonQuery(SQLiteConnection cn, string commandText)
+        {
+            SQLiteCommand cmd = cn.CreateCommand();
+            cmd.CommandText = commandText;
+            if (cn.State == ConnectionState.Closed)
+                cn.Open();
             int result = cmd.ExecuteNonQuery();
-            cmd.Connection.Close();
             cmd.Dispose();
+            cn.Close();
             return result;
-        }                
-        
+        }
+
     }
 }

@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Collections;
-using System.Data.SQLite;
-
 namespace SQLCRACKER {
     public partial class stageSelection : Form {
         public static testStage stg = null; // 定义主界面全局变量
@@ -61,9 +52,9 @@ namespace SQLCRACKER {
             stg.correctSql = dataRow[3].ToString();
             stg.tip = dataRow[4].ToString();
             stg.isExact = dataRow[5].ToString() == "True";            
-            this.Hide();           
-            DialogResult result = stg.ShowDialog();
-            this.Show();
+            Hide();           
+            stg.ShowDialog();
+            Show();
 
         }
                
